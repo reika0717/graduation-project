@@ -6,7 +6,7 @@ body{
 }
 
 p{
-	color:#9E9D9D;
+	color:#6F6F6F;
 }
 
 #wrapper{
@@ -20,13 +20,83 @@ p{
 }
 
 #containerTop{
-	min-height: 1000px;
+	min-height: 1100px;
 	background:url(../img_top/img_containerTop.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	position: relative;
+}
+
+#containerTop #scroll{
+	text-decoration: none;
+	color: #fff;
+	position: absolute;
+	bottom:10%;
+	right:50%;
+	transform:translateX(-37%);
+	padding-top: 60px;
+}
+
+#containerTop #scroll span{
+	position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+#containerTop #scroll span::before{
+	  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #containerTop #mainTitle{
@@ -68,7 +138,7 @@ p{
 #concept{
 	width:1200px;
 	min-height:670px;
-	margin-top:220px;
+	padding-top:220px;
 	-webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -77,7 +147,7 @@ p{
 
 #concept #conceptImage{
 	position: absolute;
-	top:200px;
+	top:420px;
 	left:0;
 	z-index: 1;
 }
@@ -111,7 +181,7 @@ margin-bottom: 0.5em;
   writing-mode: vertical-rl;
 	font-size: 35px;
 	font-weight:100;
-	color:#4D4D4D;
+	color:#6f6f6f;
 }
 
 #play #playTitle{
@@ -146,7 +216,7 @@ margin-bottom: 0.5em;
 	padding:12px;
 	border: 1px solid #B9B9B9;
 	font-size:0.8em;
-	color:#707070;
+	color:#b9b9b9;
 }
 
 #boat #boatPrice{
@@ -321,7 +391,7 @@ margin-bottom: 0.5em;
 	padding:12px;
 	border: 1px solid #B9B9B9;
 	font-size:0.8em;
-	color:#707070;
+	color:#B9B9B9;
 	width: 50px;
 	height: 20px;
 	text-align: center;
