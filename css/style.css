@@ -11,7 +11,10 @@ p {
 
 #wrapper {
   width: 100%;
-  margin: 0 auto;
+	margin: 0 auto;
+	background-color: #fff;
+	z-index: 1;
+	position: relative;
 }
 
 #contents {
