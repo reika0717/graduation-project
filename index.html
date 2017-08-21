@@ -12,11 +12,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
 <script src="js/jquery.tubular.1.0.js"></script>
+<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?OhsMb7qAvec%3D&aa=1&ab=2" charset="utf-8"></script>
 <script>
 	$(document).ready(function(){
-		$("#containerTop").ready(function(){
-			videoID:'crpiAoM_6rU'
-			width: $(window).width()
+		$('#containerTop').tubular({
+			videoId:'crpiAoM_6rU'
 		});
 	});
 
@@ -25,7 +25,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
  $('.action').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 500){
+  if(topWindow > targetPosition - windowHeight + 200){
    $(this).addClass("fadeInDown");
   }
  });
@@ -52,6 +52,22 @@ $(function() {
     return false;
   });
 });	
+
+var menuHeight = $("#navi").height();
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos) {
+    if($(window).scrollTop() >= 200) {
+      $("#navi").css("top", "-" + 170 + "px");
+    }
+  } else {
+    $("#navi").css("top", 0 + "px");
+  }
+  startPos = currentPos;
+  });
+
+
 </script>
 </head>
 
@@ -61,15 +77,17 @@ $(function() {
   <p id="mainTitle" class="title">さくら湖商店</p>
   <a href="#concept" id="scroll"><span></span>Scroll</a>
 </div>
+
 <div id="contents">
+
   <div id="navi">
     <ul class="clearfix">
-      <li>top</li>
-      <li>about</li>
-      <li>あそぶ</li>
-      <li>たべる</li>
-      <li>いむたの風景</li>
-      <li>店舗情報</li>
+      <li><a href="#containerTop">top</a></li>
+      <li><a href="#concept">about</a></li>
+      <li><a href="#play">あそぶ</a></li>
+      <li><a href="#eat">たべる</a></li>
+      <li><a href="#view">いむたの風景</a></li>
+      <li><a href="#contact">店舗情報</a></li>
       </ul>
   </div>
   
@@ -83,7 +101,12 @@ $(function() {
       <p>生い茂る緑に囲まれたお店の前には、</p>
       <p>美しいいむた池の景色が広がっています。</p>
       </div>
-    <p id="conceptImage"  class="action"><img src="img_top/img_concept.png" width="705" height="466" alt=""/></p>
+    <p id="conceptImage1"  class="action delay1"><img src="img_top/img_concept.png" width="705" height="466" alt=""/></p>
+    <p><img id="conceptImage2"  class="action delay3 " src="img_view/img_mount2.jpg" width="3648" height="2432" alt=""/></p>
+    <p><img id="conceptImage3"  class="action delay2" src="img_view/img_bird.jpg" width="3648" height="2432" alt=""/></p>
+    <p><img id="conceptImage4"  class="action delay4" src="img_view/img_granma.jpg" width="3648" height="2432" alt=""/></p>
+    <p><img id="conceptImage5"  class="action"  src="img_view/img_granma2.jpg" width="2432" height="3648" alt=""/></p>
+    
   </div>
   
   <div id="play">
@@ -165,10 +188,10 @@ $(function() {
       <p id="moreBtn" class="action"><a href="＃">more</a></p>
       </div>
   </div>
+		<h2 id="contactTitle" class="title action">店舗情報</h2>
   </div>
     
   <div id="contact" class="clearfix">
-		<h2 id="contactTitle" class="title action">店舗情報</h2>
             <div id="info">
 				<dl>
 					<dt>住所</dt>

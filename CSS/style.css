@@ -2,11 +2,12 @@
 
 body{
 	width:100%;
-	font-family:"Tsukushi A Round Gothic Regular","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+font-family: "FOT-筑紫A丸ゴシック Std R";
+	/*	font-family:"Tsukushi A Round Gothic Regular","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";*/
 }
 
 p{
-	color:#6F6F6F;
+	color:#333333;
 }
 
 #wrapper{
@@ -21,7 +22,6 @@ p{
 
 #containerTop{
 	min-height: 1100px;
-	background:url(../img_top/img_containerTop.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,7 +35,7 @@ p{
 	position: absolute;
 	bottom:10%;
 	right:50%;
-	transform:translateX(-37%);
+	transform:translateX(50%);
 	padding-top: 60px;
 }
 
@@ -100,20 +100,31 @@ p{
 }
 
 #containerTop #mainTitle{
-	  -webkit-writing-mode: vertical-rl;
+	 -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-		font-size:50px;
+		font-size:55px;
 		color:#FFFFFF;
 	  position: absolute;
-		top:25%;
-	  right:50%;
-		letter-spacing: 20px;
+	 top:50%;
+	 left:50%;
+	transform:translate(-50%,-50%);
+	margin-top:-70px;
+	letter-spacing: 30px;
 }
 
 #navi{
-	display: none;
-	position:relative;
+	position:fixed;
+	top:0;
+	right:15%;
+	z-index:9999;
+	transition: .3s;
+}
+
+#navi ul li a{
+	text-decoration:none;
+	color:#6F6F6F;
+	transition: .3s;
 }
 
 #navi ul{
@@ -121,9 +132,7 @@ p{
 	height:150px;
 	background-color:#FFFFFF;
 	opacity: 0.6;
-	position: absolute;
-	right:0;
-	top:20px;
+	padding-top:20px;
 }
 
 #navi ul li{
@@ -138,28 +147,64 @@ p{
 #concept{
 	width:1200px;
 	min-height:670px;
-	padding-top:220px;
+	padding-top:420px;
 	-webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 	position: relative;
 }
 
-#concept #conceptImage{
+#concept #conceptImage1{
 	position: absolute;
-	top:420px;
-	left:0;
+	top: 713px;
+    left: -132px;
 	z-index: 1;
 }
+
+#concept #conceptImage2{
+	max-width:203px;
+	height:auto;
+	position: absolute;
+    right: -20%;
+    top: 61%;
+	opacity: 0.7;
+	}
+	
+#concept #conceptImage3{
+	max-width: 344px;
+    height: auto;
+    position: absolute;
+    right: -8%;
+    top: 14%;
+	}
+	
+	#concept #conceptImage4{
+    max-width: 380px;
+    height: auto;
+    position: absolute;
+    left: -2%;
+    top: 24%;
+			}
+			
+   #concept #conceptImage5{
+	max-width: 117px;
+    height: auto;
+    position: absolute;
+    right: 4%;
+    bottom: -5%;
+	}
+
 
 #concept #conceptTitle{
 	font-size: 35px;
 	line-height:90px;
+	position:relative;
+	z-index:2;
 }
 
 #concept #conceptPhrase{
 	position: relative;
-	margin:0px 10px 0 0;
+	margin:0px 20px 0 0;
 	line-height:80px;
 	font-size: 1.3em;
 	z-index:2;
@@ -172,7 +217,7 @@ margin-bottom: 0.5em;
 }
 
 #play{
-	margin-top:220px;
+	margin-top:320px;
 }
 
 .title{
@@ -406,7 +451,6 @@ margin-bottom: 0.5em;
 }
 
 #contact{
-	margin-top: 300px;
 	min-height: 1000px;
 	background:url(../img_top/img_contact.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -414,6 +458,7 @@ margin-bottom: 0.5em;
   -o-background-size: cover;
 	background-size: cover;
 	position:relative;
+	margin-top:-60px;
 }
 
 #contact #info{
@@ -428,17 +473,17 @@ margin-bottom: 0.5em;
 	transform:translate(-50%,-50%);
 }
 
-#contact #contactTitle{
+ #contactTitle{
 	padding-bottom:10px;
 	background: #FFFFFF;
-	position: absolute;
-	top:-80px;
-	left:60px;
-}
+    margin-top: 220px;
+    position: relative;
+    z-index: 1;
+	 }
 
 
 #contact #info dl{
-	color:#4d4d4d;
+	color:#6F6F6F;
 }
 
 #contact dt{
@@ -471,26 +516,26 @@ margin-bottom: 0.5em;
 
 #footer #blogBtn a{
 	text-decoration: none;
-	color:#333;
+	color:#6F6F6F;
 }
 
 #footer #instaBtn a{
 	margin-left: 10px;
 	text-decoration: none;
-	color:#333;
+	color:#6F6F6F;
 }
 
 .action{
 	visibility:hidden;
 }
 
-.fadeInDown {
+.fadeInDown{
  -webkit-animation-fill-mode:both;
  -ms-animation-fill-mode:both;
  animation-fill-mode:both;
- -webkit-animation-duration:2s;
- -ms-animation-duration:2s;
- animation-duration:2s;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
  -webkit-animation-name: fadeInDown;
  animation-name: fadeInDown;
  visibility: visible !important;
@@ -504,4 +549,17 @@ margin-bottom: 0.5em;
 @keyframes fadeInDown {
  0% { opacity: 0; -webkit-transform: scale(1.1,1.1); -ms-transform:  scale(1.1,1.1); transform: scale(1.1,1.1); }
  100% { opacity: 1;}
+}
+
+.delay1{
+	animation-delay: 0.3s;
+}
+.delay2{
+	animation-delay: 0.6s;
+}
+.delay3{
+	animation-delay: 0.9s;
+}
+.delay4{
+	animation-delay: 1.2s;
 }
