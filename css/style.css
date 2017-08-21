@@ -504,9 +504,11 @@ p {
 }
 
 #footer {
-  margin: 50px auto 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
   width: 135px;
-  min-height: 200px;
+	min-height: 200px;
 }
 
 #footer #blogBtn {
