@@ -266,7 +266,7 @@ p {
 }
 
 .price {
-  padding: 12px;
+  padding: 12px 14px;
   border: 1px solid #B9B9B9;
   font-size: 0.8em;
   color: #b9b9b9;
@@ -299,10 +299,14 @@ p {
 }
 
 #bike #bikePrice {
-  width: 120px;
   position: absolute;
   left: 100px;
   bottom: 0;
+}
+
+#bike #bikePrice .fitari{
+	margin-left: -7px;
+	margin-right: -7px;
 }
 
 #eat {
@@ -330,7 +334,6 @@ p {
 }
 
 #eat #eatPrice {
-  width: 100px;
   line-height: 20px;
   position: absolute;
   right: 60px;
