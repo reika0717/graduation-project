@@ -151,7 +151,7 @@ p {
 }
 
 #concept {
-  width: 100%;
+	width:100%;
   min-height: 772px;
   padding-top: 220px;
   -webkit-writing-mode: vertical-rl;
@@ -161,6 +161,8 @@ p {
 }
 
  #concept #conceptImage1 {
+	 width:705px;
+	 height:466px;
 	position: absolute;
 	left:0;
 	top:525px;
