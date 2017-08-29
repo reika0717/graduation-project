@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:768px){
+	
+	#containerTop{
+		width:100%;
+	}
+	
+	#contents{
+		width: 100%;	
+	}
+	
+	#containerTop #mainTitle{
+		font-size: 1.9em;
+		letter-spacing: 0.7em;
+	}
+		
+	#concept{
+		padding-top: 50px;
+		min-height: 400px;
+		position:relative;
+	}
+	
+	#concept #conceptTitle{
+		font-size: 1.1em;
+	}
+	
+	#concept #conceptTitle #conceptTitle2{
+		line-height:2em;
+	}
+	
+	#concept #conceptPhrase{
+		font-size:0.7em;
+		line-height: 3.0em;
+		margin-right: 10px;
+	}
+	
+	#concept #conceptImage1{
+		position: absolute;
+		width: 282px;
+		height: auto;
+		top: 45%;
+		left: 5px;
+	}
+	
+	.title{
+		font-size:1.1em;
+		}
+
+	#play{
+		margin-top: 0
+			}
+	
+	#play #playTitle
+	#eat #eatTitle{
+		font-size: 1.9em;
+		letter-spacing: 0.3em;
+	}
+	
+	#boat #boatImg{
+		position: static;
+	}
+	
+	#boat #boatImg img{
+	    width: 295px;
+    	height: auto;
+    	position: absolute;
+    	left: 10px;
+    	bottom: -117px;
+	}
+	
+	#boat #boatPhrase{
+		font-size:0.7em;
+		line-height: 3.0em;
+		top:-130px;
+		right: 0;		
+	}
+	
+	.backWhite{
+		background: #fff;
+		padding-left: 5px;
+	}
+	
+	#boat #boatPrice{
+		position: absolute;
+		bottom: -117px;
+		right:0;
+		opacity: 0.5;
+		line-height:20px;
+	}
+	
+	#boat #boatPrice p,
+	#bike #bikePrice p,
+	#eat #eatPrice p{
+		font-size: 0.5em
+	}
+	
+	.price{
+		padding:0;
+		border:none;
+		background:none;
+	}
+	
+	#bike #bikeImage{
+		position: static;
+	}
+	
+	#bike #bikeImage img{
+	    width: 295px;
+    	height: auto;
+    	position: absolute;
+    	right: 10px;
+    	bottom: -325px;
+	}
+	
+	#bike #bikePhrase{
+		font-size:0.7em;
+		line-height: 3.0em;
+		top:143px;
+		left: 10px;	
+		letter-spacing: 0.5px;
+	}
+	
+	#bike #bikePrice{
+		position: absolute;
+		bottom: -325px;
+		left:10px;
+		opacity: 0.5;
+		padding: 12px 8px;
+		line-height:20px;
+	}
+	
+	#bike #bikePrice .fitari{
+		margin-left:-2px;
+		padding-right:0;
+	}
+	
+	#eat{
+		margin-top:850px;
+		height:150px;
+	}
+	
+	#eat #eatTitle{
+		position:absolute;
+		right: 50px;
+		top:-140px;		
+	}
+	
+	#eat #eatImage{
+		position: static;
+	}
+	
+	#eat #eatImage img{
+		width:295px;
+		height:auto;
+		position: absolute;
+		left:25px;
+		top:0;
+	}
+	
+	#eat #eatPhrase{
+		font-size:0.7em;
+		line-height: 3.0em;
+		top:15px;
+		right: 10px;
+	}
+	
+	#eat #eatPrice{
+		position: absolute;
+		height:35px;
+		top:148px;
+		right: 4px;
+	}
+	
+	#eat #eatPrice .natsu{
+		padding:3px 0;
+		margin-left: 38px;
+	}
+
+	#access{
+		margin-top: 121px;
+		width: 100%;
+	}
+	
+	#access #accessPhrase{
+		position: absolute;
+		width:227px;
+		top: 134px;
+    	left: 53%;
+		transform: translateX(-50%);
+	}
+	
+	#access #accessPhrase .br::before{
+		content: "\A" ;
+		white-space: pre ;
+		}
+	
+	#access #accessPhrase p{
+		font-size: 0.5em;
+		line-height: 2.0em;
+	}
+	
+	#access #accessContents #process{
+		margin-left: 0;
+
+	}
+		
+	#access #accessContents #process img{
+		width: 100%;
+		height: auto;
+		margin-left: 39px;
+  		margin-top: 40px;
+	}
+
+	#access #accessContents #bus{
+		position: absolute;	
+		right:-50px;
+	}
+	
+	#access #accessContents #bus a{
+		font-size: 0.5em
+	}
+	
+	#view{
+		width:100%;
+		position:relative;
+	}
+	
+	#view #viewTitle{
+		position: absolute;
+    	right: 50px;
+    	top: -76px;
+	}
+	
+	#view #swan #swanImage img{
+		width:295px;
+		height:auto;
+		margin: 110px 0 0 15px;
+		}
+		
+	#view #swan #swanPhrase,
+	#view #flower #flowerPhrase,
+	#view #granma #granmaPhrase {
+		font-size:0.5em;
+		line-height:3em;
+	}
+	
+	#view #swan #swanPhrase{
+	    position: absolute;
+    	top: 150px;
+  	    left: 142px;
+	}
+	
+	#view #flower{
+		margin-top:100px;
+	}
+	
+	#view #flower #flowerImage{
+		margin-right:10px;
+	}
+	
+	#view #flower #flowerImage img{
+		width:295px;
+		height:auto;
+	}
+	
+	#view #flower #flowerPhrase{
+		z-index:5;
+		top: 47px;
+    	left: 25px;
+	}
+	
+	#view #granma {
+		margin-top:100px;
+	}
+	
+	#view #granma #granmaImage{
+	   margin-left:10px;
+	}
+	
+	#view #granma #granmaImage img{
+		width:295px;
+		height:auto;
+	}
+	
+	#view #granma #granmaPhrase {
+		top: 42px;
+    	right: 10px;
+	}
+	
+	.bgWhite{
+		padding:2px 5px;
+		background:#fff;
+	}
+	
+	#view #granma a #moreBtn{
+	    padding: 7px 10px;
+		position: absolute;
+		background: #fff;
+		top: -192px;
+		right: 5px;
+		font-size: 0.5em;
+	}
+	
+	#contactTitle {
+	 	margin: 100px 0 0 60px;
+		padding-bottom: 5px;
+	}
+	
+	#contact{
+		width:100%;
+    	min-height: 400px;
+	}
+	
+	#contact #sns{
+		width:92px;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-31%);
+	}
+	
+	#contact #info dl {
+		width:200px;
+		height: 128px;
+		padding: 10px 20px;
+	}
+	
+	#contact dt {
+    	width: 40px;
+		font-size:0.5em;
+	}
+	
+	#contact dd {
+    	width: 160px;
+		font-size:0.5em;
+	}
+	
+	#contact #sns #blogBtn a,
+	#contact #sns #instaBtn a{
+		font-size:0.5em;
+	}
+		
+	
+}

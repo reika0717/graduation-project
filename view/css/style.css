@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:1128px;
+    height: 100%;
+	margin:0 auto;
+	position: relative;
+}
+
+#title{
+    background: #FFFFFF;
+    margin-top: 58px;
+    padding: 20px 15px;
+    position: absolute;
+    top: -30px;
+    left: 46px;
+    z-index: 2;
+		border:1px solid #DADADA;
+	
+}
+
+#ill_bike{
+	width:450px;
+	height:auto;
+	position: absolute;
+	right:-85px;
+	top:276px;
+	animation-duration: 3s;
+	animation-name: slide-hidari; 
+	}
+
+@keyframes slide-hidari{
+	from{
+		right:0px;
+		}      
+	to	{
+		right:-85px;
+	}
+}
+
+ul,ol{
+  list-style: none;
+}
+
+#imgWrap{
+	width:1128px;
+	position: absolute;
+	top:452px;
+	left: 0;}
+
+#imgWrap ul{
+	margin: 0 auto;
+	width:1128px;
+}
+
+#imgWrap li{
+	margin: 4px;
+	width: 180px;
+	height:180px;
+	float:left;
+}
+
+#imgWrap li img{
+	display: none;
+}
+
+
+
+.ill_swan{
+	width:180px;
+	height:180px;
+	object-fit: cover;
+	object-position:40% 50%;
+}
+
+#illust{
+	position: relative;
+}
+
+.ill_flower{
+	width:140px;
+	height:140px;
+	position: absolute;
+	top:15px;
+	right:17px;
+}
+
+.clearfix:after{
+  visibility:hidden;/*見えなくする*/
+  height:0;/*見えなくする*/
+  display: block;/*block要素にする*/
+  font-size: 0;
+  content: " ";
+  clear: both;
+}

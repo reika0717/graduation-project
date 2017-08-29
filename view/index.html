@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-style-type" content="text/css" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>いむたの風景</title>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	
+$(function(){
+	$(".group").fancybox();
+	});
+
+$(function(){
+    var setElm = $('.pic'),
+    delaySpeed = 50,
+    fadeSpeed = 1500;
+ 
+    $(window).load(function(){
+        randomShow();
+        function randomShow(){
+            var elmLength = setElm.length,
+            randomSet = Math.floor(Math.random()*elmLength);
+ 
+            $(setElm[randomSet]).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+            setElm.splice(randomSet,1);
+ 
+            if (elmLength > 0) {
+                setTimeout(function(){randomShow();},delaySpeed);
+            } else {
+                return false;
+            }
+        }
+    });
+});
+	
+
+</script>
+
+</head>
+
+<body>
+
+<p><img id="title" src="../img_top/title_picture.png" width="45" height="271" alt="いむたの風景"/></p>
+
+<p><img id="ill_bike" src="img_view/ill_bike.png" width="1280" height="702" alt=""/></p>
+
+<div id="imgWrap">
+  <ul class="clearfix">
+    <li><a class="group" href="img_view/img_bird.jpg"><img class="pic" src="img_view/img_bird_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_flower.jpg"><img class="pic" src="img_view/img_flower_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_granma.jpg"><img class="pic" src="img_view/img_granma_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_granma2.jpg"><img class="pic" src="img_view/img_granma2_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_hand.jpg"><img class="pic" src="img_view/img_hand_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_house.jpg"><img class="pic" src="img_view/img_house_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_mochi.jpg"><img class="pic" src="img_view/img_mochi_s.png" width="180" height="180" alt=""/></a></li>
+    <li><img class="pic ill_swan" src="img_view/ill_2.jpg" width="1280" height="702" alt=""/></li>
+    <li><a class="group" href="img_view/img_mount.jpg"><img class="pic" src="img_view/img_mount_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_boat.JPG"><img class="pic" src="img_view/img_boat_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_darts.jpg"><img class="pic" src="img_view/img_darts_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_leaf.JPG"><img class="pic" src="img_view/img_leaf_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_mount2.png"><img class="pic" src="img_view/img_mount2_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_niagra.jpg"><img class="pic" src="img_view/img_niagra_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_pond.jpg"><img class="pic" src="img_view/img_pond_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_school.jpg"><img class="pic" src="img_view/img_school_s.png" width="180" height="180" alt=""/></a></li>
+    <li id="illust"><img class="pic ill_flower" src="img_view/ill_flower.png" width="1280" height="702" alt=""/></li>
+    <li><a class="group" href="img_view/img_store2.JPG"><img class="pic" src="img_view/img_store2_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_swan.jpg"><img class="pic" src="img_view/img_swan_s.png" width="180" height="180" alt=""/></a></li>
+    <li><a class="group" href="img_view/img_store.jpg"><img class="pic" src="img_view/img_store_s.png" width="180" height="180" alt=""/></a></li>
+  </ul>
+</div>
+
+</body>
+</html>
