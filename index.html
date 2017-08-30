@@ -58,7 +58,7 @@
         return false;
       });
     });
-
+		
     var menuHeight = $("#navi").height();
     var startPos = 0;
     $(window).scroll(function () {
@@ -66,12 +66,29 @@
       if (currentPos > startPos) {
         if ($(window).scrollTop() >= 200) {
           $("#navi").css("top", "-" + 170 + "px");
-        }
-      } else {
+				}
+        }else{
         $("#navi").css("top", 0 + "px");
       }
       startPos = currentPos;
+		});
+	
+$(function() {
+    var navi = $('#navi');
+    var topHeight = $("#containerTop").height();
+	  navi.hide();
+    $(window).scroll(function () {
+      var currentPos = $(this).scrollTop();
+        if (currentPos > topHeight) {
+        //ボタンの表示方法
+            navi.fadeIn();
+        } else{
+					navi.hide();
+				}
     });
+	
+});
+	
   </script>
 </head>
 
@@ -90,6 +107,7 @@
           <li><a href="#concept">about</a></li>
           <li><a href="#play">あそぶ</a></li>
           <li><a href="#eat">たべる</a></li>
+          <li><a href="#access">アクセス</a></li>
           <li><a href="#view">いむたの風景</a></li>
           <li><a href="#contact">店舗情報</a></li>
         </ul>
@@ -202,7 +220,7 @@
           <dt>住所</dt>
           <dd>〒895-1502<br>鹿児島県薩摩川内市祁答院町藺牟田</dd>
           <dt>TEL</dt>
-          <dd>0996-56-0826</dd>
+          <dd>0996-56-0820</dd>
           <dt>MAIL</dt>
           <dd>reikahirahara@gmail.com</dd>
           <dt>営業時間</dt>

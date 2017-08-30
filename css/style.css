@@ -31,6 +31,7 @@ p {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+	z-index:2;
 }
 
 #containerTop #scroll {
@@ -122,9 +123,9 @@ p {
 #navi {
   position: fixed;
   top: 0;
-  right: 15%;
-  z-index: 9999;
+  right: 10%;
   transition: .3s;
+	z-index:9998;
 }
 
 #navi ul li a {
@@ -134,11 +135,9 @@ p {
 }
 
 #navi ul {
-  width: 300px;
-  height: 150px;
   background-color: #FFFFFF;
   opacity: 0.6;
-  padding-top: 20px;
+  padding: 25px 15px 40px;
 }
 
 #navi ul li {
@@ -146,7 +145,7 @@ p {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   float: right;
-  line-height: 50px;
+  line-height: 43px;
   color: #000000;
 }
 
@@ -338,6 +337,10 @@ p {
   position: absolute;
   right: 60px;
   bottom: 0;
+}
+
+#eat #eatPrice .natsu{
+	margin-left:-8px;
 }
 
 #access {
