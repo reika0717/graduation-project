@@ -1,7 +1,15 @@
 @charset "utf-8";
-/* CSS Document */
 
 @media screen and (max-width:768px){
+	
+	#navi ul li a{
+		font-size:0.9em;
+	}
+	
+	#navi ul li{
+		line-height: 2.2em;
+
+	}
 	
 	#containerTop{
 		width:100%;
@@ -14,11 +22,12 @@
 	#containerTop #mainTitle{
 		font-size: 1.9em;
 		letter-spacing: 0.7em;
+		min-height: 310px;
 	}
 		
 	#concept{
 		padding-top: 50px;
-		min-height: 400px;
+		min-height: 337px;
 		position:relative;
 	}
 	
@@ -40,7 +49,7 @@
 		position: absolute;
 		width: 282px;
 		height: auto;
-		top: 45%;
+		top: 203px;
 		left: 5px;
 	}
 	
@@ -49,7 +58,7 @@
 		}
 
 	#play{
-		margin-top: 0
+		margin-top: 65px;
 			}
 	
 	#play #playTitle
@@ -89,6 +98,10 @@
 		opacity: 0.5;
 		line-height:20px;
 	}
+	
+	#boat #boatPrice .hidari{
+		margin-right:23px;
+		}
 	
 	#boat #boatPrice p,
 	#bike #bikePrice p,
@@ -137,8 +150,8 @@
 	}
 	
 	#eat{
-		margin-top:850px;
-		height:150px;
+		margin-top:803px;
+		height:178px;
 	}
 	
 	#eat #eatTitle{
@@ -156,7 +169,7 @@
 		height:auto;
 		position: absolute;
 		left:25px;
-		top:0;
+		top:-25px;
 	}
 	
 	#eat #eatPhrase{
@@ -169,24 +182,24 @@
 	#eat #eatPrice{
 		position: absolute;
 		height:35px;
-		top:148px;
+		top:142px;
 		right: 4px;
 	}
 	
 	#eat #eatPrice .natsu{
 		padding:3px 0;
-		margin-left: 38px;
+		margin-left: 0px;
 	}
 
 	#access{
-		margin-top: 121px;
+		margin-top: 65px;
 		width: 100%;
 	}
 	
 	#access #accessPhrase{
 		position: absolute;
 		width:227px;
-		top: 134px;
+		top: 127px;
     	left: 53%;
 		transform: translateX(-50%);
 	}
@@ -210,7 +223,7 @@
 		width: 100%;
 		height: auto;
 		margin-left: 39px;
-  		margin-top: 40px;
+  		margin-top: 80px;
 	}
 
 	#access #accessContents #bus{
@@ -314,7 +327,7 @@
 	}
 	
 	#contact #sns{
-		width:92px;
+		width:78px;
 		position: absolute;
 		bottom: 20px;
 		left: 50%;
@@ -322,8 +335,8 @@
 	}
 	
 	#contact #info dl {
-		width:200px;
-		height: 128px;
+		width:168px;
+		height: 111px;
 		padding: 10px 20px;
 	}
 	
@@ -333,7 +346,7 @@
 	}
 	
 	#contact dd {
-    	width: 160px;
+    	width: 128px;
 		font-size:0.5em;
 	}
 	
@@ -341,6 +354,15 @@
 	#contact #sns #instaBtn a{
 		font-size:0.5em;
 	}
-		
+	
+	#contact #sns #blogBtn{
+		border:none;
+		padding: 0;
+	} 
+	
+	#contact #sns #blogBtn a{
+		padding-right: 10px;
+		border-right:1px solid #b9b9b9;
+	}
 	
 }

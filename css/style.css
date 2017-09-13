@@ -2,7 +2,6 @@
 body {
   width: 100%;
   font-family: "FOT-筑紫A丸ゴシック Std R";
-  /*  font-family:"Tsukushi A Round Gothic Regular","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";*/
 }
 
 p {
@@ -118,6 +117,7 @@ p {
   transform: translate(-50%, -50%);
   margin-top: -70px;
   letter-spacing: 30px;
+	min-height: 511px;
 }
 
 #navi {
@@ -166,39 +166,6 @@ p {
 	left:0;
 	top:525px;
 }
-
-/*#concept #conceptImage2 {
-  max-width: 180px;
-  height: auto;
-  position: absolute;
-  right: 0;
-  top: 61%;
-  opacity: 0.7;
-}
-
-#concept #conceptImage3 {
-  max-width: 344px;
-  height: auto;
-  position: absolute;
-  right: -8%;
-  top: 14%;
-}
-
-#concept #conceptImage4 {
-  max-width: 380px;
-  height: auto;
-  position: absolute;
-  left: -2%;
-  top: 24%;
-}
-
-#concept #conceptImage5 {
-  max-width: 117px;
-  height: auto;
-  position: absolute;
-  right: 4%;
-  bottom: -5%;
-}*/
 
 #concept #conceptTitle {
   font-size: 35px;
@@ -276,6 +243,10 @@ p {
   text-align: right;
   right: 50px;
   bottom: 0px;
+}
+
+#boat #boatPrice .hidari{
+	margin-right:37px;	
 }
 
 #bike {
@@ -560,7 +531,7 @@ p {
 #contact #sns{
 	width:135px;
 	position:absolute;
-    bottom:20px;
+  bottom:20px;
 	left:50%;
 	transform:translateX(-50%);	
 }
@@ -619,20 +590,3 @@ p {
     opacity: 1;
   }
 }
-
-/*.delay1 {
-  animation-delay: 0.3s;
-}
-
-.delay2 {
-  animation-delay: 0.6s;
-}
-
-.delay3 {
-  animation-delay: 0.9s;
-}
-
-.delay4 {
-  animation-delay: 1.2s;
-}
-*/
