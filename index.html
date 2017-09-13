@@ -1,233 +1,243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta name="Description" content="鹿児島市内から１時間弱、鹿児島は川内市に位置する小さな池「藺牟田池」。さくら湖商店はそのほとりにある小さな商店です。手つかずの自然をありのまま感じられるように、少しだけ、アクティビティを用意しました。心がきゅうっとなる自然を、一度体験してみませんか。"/>
-  <meta name="Keywords" content="さくら湖商店,さくら湖,藺牟田池,藺牟田,いむた,鹿児島,川内,自然,休日,インスタ,インスタジェニック,女子旅,カップル,一人旅,釣り,自転車,ボート,公園,桜島" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="content-script-type" content="text/javascript" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>さくら湖商店</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/response.css">
-  <script type="text/javascript" src="view/js/jquery-3.1.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
-  <script src="js/jquery.tubular.1.0.js"></script>
-  <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?OhsMb7qAvec%3D&aa=1&ab=2" charset="utf-8"></script>
-  <script>
-    $(document).ready(function () {
-      $('#containerTop').tubular({
-        videoId: 'crpiAoM_6rU'
-      });
-    });
+	<meta content="鹿児島市内から１時間弱、鹿児島は川内市に位置する小さな池「藺牟田池」。さくら湖商店はそのほとりにある小さな商店です。手つかずの自然をありのまま感じられるように、少しだけ、アクティビティを用意しました。心がきゅうっとなる自然を、一度体験してみませんか。" name="Description">
+	<meta content="さくら湖商店,さくら湖,藺牟田池,藺牟田,いむた,鹿児島,川内,自然,休日,インスタ,インスタジェニック,女子旅,カップル,一人旅,釣り,自転車,ボート,公園,桜島" name="Keywords">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="text/javascript" http-equiv="content-script-type">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<title>さくら湖商店</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/response.css" rel="stylesheet">
+	<script src="view/js/jquery-3.1.1.min.js" type="text/javascript">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js">
+	</script>
+	<script src="js/jquery.tubular.1.0.js">
+	</script>
+	<script charset="utf-8" src="//webfont.fontplus.jp/accessor/script/fontplus.js?OhsMb7qAvec%3D&aa=1&ab=2" type="text/javascript">
+	</script>
+	<script>
+	   $(document).ready(function () {
+	     $('#containerTop').tubular({
+	       videoId: 'crpiAoM_6rU'
+	     });
+	   });
 
-    $(window).scroll(function () {
-      var windowHeight = $(window).height(),
-        topWindow = $(window).scrollTop();
-      $('.action').each(function () {
-        var targetPosition = $(this).offset().top;
-        if (topWindow > targetPosition - windowHeight + 200) {
-          $(this).addClass("fadeInDown");
-        }
-      });
-    });
+	   $(window).scroll(function () {
+	     var windowHeight = $(window).height(),
+	       topWindow = $(window).scrollTop();
+	     $('.action').each(function () {
+	       var targetPosition = $(this).offset().top;
+	       if (topWindow > targetPosition - windowHeight + 200) {
+	         $(this).addClass("fadeInDown");
+	       }
+	     });
+	   });
 
-    $(function () {
-      // スクロールのオフセット値
-      var offsetY = 0;
-      // スクロールにかかる時間
-      var time = 500;
+	   $(function () {
+	     // スクロールのオフセット値
+	     var offsetY = 0;
+	     // スクロールにかかる時間
+	     var time = 500;
 
-      // ページ内リンクのみを取得
-      $('a[href^=#]').click(function () {
-        // 移動先となる要素を取得
-        var target = $(this.hash);
-        if (!target.length) return;
-        // 移動先となる値
-        var targetY = target.offset().top + offsetY;
-        // スクロールアニメーション
-        $('html,body').animate({
-          scrollTop: targetY
-        }, time, 'swing');
-        // ハッシュ書き換えとく
-        window.history.pushState(null, null, this.hash);
-        // デフォルトの処理はキャンセル
-        return false;
-      });
-    });
-		
-    var menuHeight = $("#navi").height();
-    var startPos = 0;
-    $(window).scroll(function () {
-      var currentPos = $(this).scrollTop();
-      if (currentPos > startPos) {
-        if ($(window).scrollTop() >= 200) {
-          $("#navi").css("top", "-" + 170 + "px");
-				}
-        }else{
-        $("#navi").css("top", 0 + "px");
-      }
-      startPos = currentPos;
-		});
-	
-$(function() {
-    var navi = $('#navi');
-    var topHeight = $("#containerTop").height();
-	  navi.hide();
-    $(window).scroll(function () {
-      var currentPos = $(this).scrollTop();
-        if (currentPos > topHeight) {
-        //ボタンの表示方法
-            navi.fadeIn();
-        } else{
-					navi.hide();
-				}
-    });
-	
-});
-	
-  </script>
+	     // ページ内リンクのみを取得
+	     $('a[href^=#]').click(function () {
+	       // 移動先となる要素を取得
+	       var target = $(this.hash);
+	       if (!target.length) return;
+	       // 移動先となる値
+	       var targetY = target.offset().top + offsetY;
+	       // スクロールアニメーション
+	       $('html,body').animate({
+	         scrollTop: targetY
+	       }, time, 'swing');
+	       // ハッシュ書き換えとく
+	       window.history.pushState(null, null, this.hash);
+	       // デフォルトの処理はキャンセル
+	       return false;
+	     });
+	   });
+	       
+	   var menuHeight = $("#navi").height();
+	   var startPos = 0;
+	   $(window).scroll(function () {
+	     var currentPos = $(this).scrollTop();
+	     if (currentPos > startPos) {
+	       if ($(window).scrollTop() >= 200) {
+	         $("#navi").css("top", "-" + 170 + "px");
+	               }
+	       }else{
+	       $("#navi").css("top", 0 + "px");
+	     }
+	     startPos = currentPos;
+	       });
+	   
+	$(function() {
+	   var navi = $('#navi');
+	   var topHeight = $("#containerTop").height();
+	     navi.hide();
+	   $(window).scroll(function () {
+	     var currentPos = $(this).scrollTop();
+	       if (currentPos > topHeight) {
+	       //ボタンの表示方法
+	           navi.fadeIn();
+	       } else{
+	                   navi.hide();
+	               }
+	   });
+	   
+	});
+	   
+	</script>
 </head>
-
 <body>
-  <div id="containerTop">
-    <p id="mainTitle" class="title">さくら湖商店</p>
-    <a href="#concept" id="scroll"><span></span>Scroll</a>
-  </div>
-
-  <div id="wrapper">
-  <div id="contents">
-
-      <div id="navi">
-        <ul class="clearfix">
-          <li><a href="#containerTop">top</a></li>
-          <li><a href="#concept">about</a></li>
-          <li><a href="#play">あそぶ</a></li>
-          <li><a href="#eat">たべる</a></li>
-          <li><a href="#access">アクセス</a></li>
-          <li><a href="#view">いむたの風景</a></li>
-          <li><a href="#contact">店舗情報</a></li>
-        </ul>
-      </div>
-
-
-        <div id="concept">
-        <p id="conceptTitle" class="action">手つかずの自然に、<br><span id="conceptTitle2">心がきゅうっとなる瞬間を</span></p>
-        <div id="conceptPhrase" class="action">
-          <p>鹿児島市内から車で５０分、</p>
-          <p>いむた池のほとりに位置する小さな商店。</p>
-          <p><span class="tume">「</span>村の友達が集まる場所が欲しい。」</p>
-          <p>そんなおばあちゃんの思いが作ったお店です。</p>
-          <p>生い茂る緑に囲まれたお店の前には、</p>
-          <p>美しいいむた池の景色が広がっています。</p>
-        </div>
-        <p><img class="action" id="conceptImage1" src="img_top/img_concept.png" width="705" height="466" alt="" /></p>
-      </div>
-
-      <div id="play">
-        <h2 id="playTitle" class="title action">あそぶ</h2>
-        <div id="boat" class="clearfix">
-          <p id="boatImg"><img class="action" src="img_top/img_boat.png" width="585" height="394" alt="ボートイメージ画像" /> </p>
-          <div id="boatPhrase" class="action">
-            <p id="phrase1">７つの美しい外輪山に囲まれた池の上で過ごす一時。</p>
-            <p><span class="backWhite">白鳥が近づいてきたら　</span></p>
-            <p><span class="backWhite">シャッターチャンスを逃さないで。</span></p>
-          </div>
-          <div id="boatPrice" class="price action">
-            <p><span class="hidari bgWhite">ボート …　400円</span></p>
-            <p><span class="bgWhite">(1人増える毎に∔100円)</span></p>
-          </div>
-        </div>
-        <div id="bike" class="clearfix">
-          <p id="bikeImage"><img class="action" src="img_top/img_cycling.png" width="591" height="394" alt="自転車イメージ画像" /></p>
-          <div id="bikePhrase" class="action">
-            <p><span class="backWhite">池の周りをぐるっと一回り。</span></p>
-            <p><span class="backWhite">全速力でかけぬけるもよし。立ち止まってみるのもよし。</span></p>
-          </div>
-          <div id="bikePrice" class="price action">
-            <p><span  class="bgWhite">自転車 … 400円</span></p>
-            <p><span  class="bgWhite fitari">（二人乗り 500円）</span></p>
-          </div>
-        </div>
-      </div>
-
-      <div id="eat">
-        <h2 id="eatTitle" class="title action">たべる</h2>
-        <p id="eatImage"><img class="action" src="img_top/img_eat.png" width="580" height="400" alt="かき氷イメージ画像" /></p>
-        <div id="eatPhrase" class="action">
-          <p><span class="backWhite">汗をかいたら一休み。</span></p>
-          <p><span class="backWhite">たくさん動いたあとは、</span></p>
-          <p><span class="backWhite">美味しさもひとしお。</span></p>
-        </div>
-        <div id="eatPrice" class="price action">
-          <p><span class="bgWhite">かき氷 … 200円</span></p>
-          <p><span class="natsu bgWhite">（夏のみ）</span></p>
-        </div>
-      </div>
-      <div id="access">
-        <h2 id="accessTitle" class="title action">アクセス</h2>
-        <div id="accessPhrase" class="action">
-          <p>いむた池へお越しの方は車が便利です。</p>
-          <p>山の香りに包まれながら、<span class="br"></span>つかの間のドライブをお楽しみください。</p>
-        </div>
-        <div id="accessContents" class="action">
-          <p id="process"><img src="img_top/process.png" width="881" height="649" alt="" /></p>
-          <p id="bus"><a href="bus/bus.html">&gt;&gt;バスでお越しの方</a></p>
-        </div>
-      </div>
-      <div id="view">
-        <h2 id="viewTitle" class="title action">いむたの風景</h2>
-        <div id="swan" class="clearfix">
-          <p id="swanImage"><img class="action" src="img_top/img1_pic.png" width="525" height="350" alt="白鳥" /></p>
-          <div id="swanPhrase" class="action">
-            <p><span class="bgWhite">一見優雅だけど、実は人懐っこい白鳥。</span></p>
-            <p><span class="bgWhite">まっしろな羽がいむたの景色によく映える。</span></p>
-          </div>
-        </div>
-        <div id="flower" class="clearfix">
-          <div id="flowerPhrase" class="action">
-            <p><span class="bgWhite">いろんなお花が所狭しと咲くいむた池。</span></p>
-            <p><span class="bgWhite">お気に入りをみつけながら一周するのもいいかも。</span></p>
-          </div>
-          <p id="flowerImage"><img class="action" src="img_top/img2_pic.png" width="430" height="287" alt="花" /></p>
-        </div>
-        <div id="granma" class="clearfix">
-          <p id="granmaImage"><img class="action" src="img_top/img3_pic.png" width="613" height="433" alt="" /></p>
-          <div id="granmaPhrase" class="action">
-            <p><span class="bgWhite">さくら湖のオーナーは</span></p>
-            <p><span class="bgWhite">笑い上戸のおばあちゃん</span></p>
-            <p><span class="bgWhite">大切そうに握っているのは</span></p>
-            <p><span class="bgWhite" id="migi">きっといつものきな粉もち。</span></p>
-          </div>
-          <a href="view/index.html"><p id="moreBtn" class="action"><span id="under">more</span></p></a>
-        </div>
-      </div>
-      <h2 id="contactTitle" class="title action">店舗情報</h2>
-    </div>
-
-    <div id="contact" class="clearfix">
-      <div id="info">
-        <dl>
-          <dt>住所</dt>
-          <dd>〒895-1502<br>鹿児島県薩摩川内市祁答院町藺牟田</dd>
-          <dt>TEL</dt>
-          <dd>0996-56-0820</dd>
-          <dt>MAIL</dt>
-          <dd>reikahirahara@gmail.com</dd>
-          <dt>営業時間</dt>
-          <dd>10:00～17:00</dd>
-          <dt>定休日</dt>
-          <dd>不定休</dd>
-        </dl>
-        </div>
-        <div id="sns">
- 		  <p id="blogBtn"><a href="#">blog</a></p>
-          <p id="instaBtn"><a href="#">instagram</a></p>
-        </div>
-    </div>
-  </div>
+	<div id="containerTop">
+		<p class="title" id="mainTitle">さくら湖商店</p><a href="#concept" id="scroll"><span></span>Scroll</a>
+	</div>
+	<div id="wrapper">
+		<div id="contents">
+			<div id="navi">
+				<ul class="clearfix">
+					<li>
+						<a href="#containerTop">top</a>
+					</li>
+					<li>
+						<a href="#concept">about</a>
+					</li>
+					<li>
+						<a href="#play">あそぶ</a>
+					</li>
+					<li>
+						<a href="#eat">たべる</a>
+					</li>
+					<li>
+						<a href="#access">アクセス</a>
+					</li>
+					<li>
+						<a href="#view">いむたの風景</a>
+					</li>
+					<li>
+						<a href="#contact">店舗情報</a>
+					</li>
+				</ul>
+			</div>
+			<div id="concept">
+				<p class="action" id="conceptTitle">手つかずの自然に、<br>
+				<span id="conceptTitle2">心がきゅうっとなる瞬間を</span></p>
+				<div class="action" id="conceptPhrase">
+					<p>鹿児島市内から車で５０分、</p>
+					<p>いむた池のほとりに位置する小さな商店。</p>
+					<p><span class="tume">「</span>村の友達が集まる場所が欲しい。」</p>
+					<p>そんなおばあちゃんの思いが作ったお店です。</p>
+					<p>生い茂る緑に囲まれたお店の前には、</p>
+					<p>美しいいむた池の景色が広がっています。</p>
+				</div>
+				<p><img alt="" class="action" height="466" id="conceptImage1" src="img_top/img_concept.png" width="705"></p>
+			</div>
+			<div id="play">
+				<h2 class="title action" id="playTitle">あそぶ</h2>
+				<div class="clearfix" id="boat">
+					<p id="boatImg"><img alt="ボートイメージ画像" class="action" height="394" src="img_top/img_boat.png" width="585"></p>
+					<div class="action" id="boatPhrase">
+						<p id="phrase1">７つの美しい外輪山に囲まれた池の上で過ごす一時。</p>
+						<p><span class="backWhite">白鳥が近づいてきたら　</span></p>
+						<p><span class="backWhite">シャッターチャンスを逃さないで。</span></p>
+					</div>
+					<div class="price action" id="boatPrice">
+						<p><span class="hidari bgWhite">ボート …　400円</span></p>
+						<p><span class="bgWhite">(1人増える毎に∔100円)</span></p>
+					</div>
+				</div>
+				<div class="clearfix" id="bike">
+					<p id="bikeImage"><img alt="自転車イメージ画像" class="action" height="394" src="img_top/img_cycling.png" width="591"></p>
+					<div class="action" id="bikePhrase">
+						<p><span class="backWhite">池の周りをぐるっと一回り。</span></p>
+						<p><span class="backWhite">全速力でかけぬけるもよし。立ち止まってみるのもよし。</span></p>
+					</div>
+					<div class="price action" id="bikePrice">
+						<p><span class="bgWhite">自転車 … 400円</span></p>
+						<p><span class="bgWhite fitari">（二人乗り 500円）</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="eat">
+				<h2 class="title action" id="eatTitle">たべる</h2>
+				<p id="eatImage"><img alt="かき氷イメージ画像" class="action" height="400" src="img_top/img_eat.png" width="580"></p>
+				<div class="action" id="eatPhrase">
+					<p><span class="backWhite">汗をかいたら一休み。</span></p>
+					<p><span class="backWhite">たくさん動いたあとは、</span></p>
+					<p><span class="backWhite">美味しさもひとしお。</span></p>
+				</div>
+				<div class="price action" id="eatPrice">
+					<p><span class="bgWhite">かき氷 … 200円</span></p>
+					<p><span class="natsu bgWhite">（夏のみ）</span></p>
+				</div>
+			</div>
+			<div id="access">
+				<h2 class="title action" id="accessTitle">アクセス</h2>
+				<div class="action" id="accessPhrase">
+					<p>いむた池へお越しの方は車が便利です。</p>
+					<p>山の香りに包まれながら、<span class="br"></span>つかの間のドライブをお楽しみください。</p>
+				</div>
+				<div class="action" id="accessContents">
+					<p id="process"><img alt="" height="649" src="img_top/process.png" width="881"></p>
+					<p id="bus"><a href="bus/bus.html">&gt;&gt;バスでお越しの方</a></p>
+				</div>
+			</div>
+			<div id="view">
+				<h2 class="title action" id="viewTitle">いむたの風景</h2>
+				<div class="clearfix" id="swan">
+					<p id="swanImage"><img alt="白鳥" class="action" height="350" src="img_top/img1_pic.png" width="525"></p>
+					<div class="action" id="swanPhrase">
+						<p><span class="bgWhite">一見優雅だけど、実は人懐っこい白鳥。</span></p>
+						<p><span class="bgWhite">まっしろな羽がいむたの景色によく映える。</span></p>
+					</div>
+				</div>
+				<div class="clearfix" id="flower">
+					<div class="action" id="flowerPhrase">
+						<p><span class="bgWhite">いろんなお花が所狭しと咲くいむた池。</span></p>
+						<p><span class="bgWhite">お気に入りをみつけながら一周するのもいいかも。</span></p>
+					</div>
+					<p id="flowerImage"><img alt="花" class="action" height="287" src="img_top/img2_pic.png" width="430"></p>
+				</div>
+				<div class="clearfix" id="granma">
+					<p id="granmaImage"><img alt="" class="action" height="433" src="img_top/img3_pic.png" width="613"></p>
+					<div class="action" id="granmaPhrase">
+						<p><span class="bgWhite">さくら湖のオーナーは</span></p>
+						<p><span class="bgWhite">笑い上戸のおばあちゃん</span></p>
+						<p><span class="bgWhite">大切そうに握っているのは</span></p>
+						<p><span class="bgWhite" id="migi">きっといつものきな粉もち。</span></p>
+					</div><a href="view/index.html">
+					<p class="action" id="moreBtn"><span id="under">more</span></p></a>
+				</div>
+			</div>
+			<h2 class="title action" id="contactTitle">店舗情報</h2>
+		</div>
+		<div class="clearfix" id="contact">
+			<div id="info">
+				<dl>
+					<dt>住所</dt>
+					<dd>〒895-1502<br>
+					鹿児島県薩摩川内市祁答院町藺牟田</dd>
+					<dt>TEL</dt>
+					<dd>0996-56-0820</dd>
+					<dt>MAIL</dt>
+					<dd>reikahirahara@gmail.com</dd>
+					<dt>営業時間</dt>
+					<dd>10:00～17:00</dd>
+					<dt>定休日</dt>
+					<dd>不定休</dd>
+				</dl>
+			</div>
+			<div id="sns">
+				<p id="blogBtn"><a href="#">blog</a></p>
+				<p id="instaBtn"><a href="#">instagram</a></p>
+			</div>
+		</div>
+	</div>
 </body>
-
 </html>
