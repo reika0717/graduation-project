@@ -1,0 +1,872 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  font-family: "FOT-筑紫A丸ゴシック Std R";
+}
+body p {
+  color: #333333;
+}
+body .title {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 35px;
+  font-weight: 100;
+  color: #6f6f6f;
+}
+body .price {
+  padding: 12px 14px;
+  border: 1px solid #B9B9B9;
+  font-size: 0.8em;
+  color: #b9b9b9;
+}
+body #containerTop {
+  min-height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+body #containerTop #mainTitle {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 55px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -70px;
+  letter-spacing: 30px;
+  min-height: 511px;
+}
+body #containerTop #scroll {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.6em;
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  transform: translateX(50%);
+  padding-top: 60px;
+}
+body #containerTop #scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+body #containerTop #scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+body #wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+}
+body #wrapper #contents {
+  width: 1200px;
+  margin: 0 auto;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body #wrapper #contents #navi {
+  position: fixed;
+  top: 0;
+  right: 10%;
+  transition: .3s;
+  z-index: 9998;
+}
+body #wrapper #contents #navi ul {
+  background-color: #FFFFFF;
+  opacity: 0.6;
+  padding: 25px 15px 40px;
+}
+body #wrapper #contents #navi ul li {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  float: right;
+  line-height: 43px;
+  color: #000000;
+}
+body #wrapper #contents #navi ul li a {
+  text-decoration: none;
+  color: #6F6F6F;
+  transition: .3s;
+}
+body #wrapper #contents #concept {
+  width: 100%;
+  min-height: 772px;
+  padding-top: 220px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+}
+body #wrapper #contents #concept #conceptImage1 {
+  width: 705px;
+  height: 466px;
+  position: absolute;
+  left: 0;
+  top: 525px;
+}
+body #wrapper #contents #concept #conceptTitle {
+  font-size: 35px;
+  position: relative;
+  z-index: 2;
+}
+body #wrapper #contents #concept #conceptTitle #conceptTitle2 {
+  line-height: 122px;
+}
+body #wrapper #contents #concept #conceptPhrase {
+  position: relative;
+  line-height: 80px;
+  font-size: 1.3em;
+  z-index: 2;
+}
+body #wrapper #contents #concept #conceptPhrase .tume {
+  display: inline-block;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+}
+body #wrapper #contents #play {
+  margin-top: 320px;
+}
+body #wrapper #contents #play #playTitle {
+  margin-left: 60px;
+}
+body #wrapper #contents #play #boat {
+  margin-top: 180px;
+  position: relative;
+}
+body #wrapper #contents #play #boat #boatImg {
+  float: left;
+  margin-left: 60px;
+}
+body #wrapper #contents #play #boat #boatPhrase {
+  text-align: right;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  font-size: 1.3em;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+}
+body #wrapper #contents #play #boat #boatPhrase #phrase1 {
+  background: #FFFFFF;
+}
+body #wrapper #contents #play #boat #boatPrice {
+  position: absolute;
+  text-align: right;
+  right: 50px;
+  bottom: 0px;
+}
+body #wrapper #contents #play #boat #boatPrice .hidari {
+  margin-right: 37px;
+}
+body #wrapper #contents #play #bike {
+  margin-top: 280px;
+  position: relative;
+}
+body #wrapper #contents #play #bike #bikeImage {
+  float: right;
+  margin-right: 60px;
+}
+body #wrapper #contents #play #bike #bikePhrase {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-size: 1.3em;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+}
+body #wrapper #contents #play #bike #bikePrice {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+}
+body #wrapper #contents #play #bike #bikePrice .fitari {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+body #wrapper #contents #eat {
+  margin-top: 220px;
+  position: relative;
+}
+body #wrapper #contents #eat #eatTitle {
+  margin-left: 1100px;
+}
+body #wrapper #contents #eat #eatImage {
+  margin-top: 100px;
+  margin-left: 180px;
+}
+body #wrapper #contents #eat #eatPhrase {
+  position: absolute;
+  text-align: right;
+  top: 320px;
+  right: 60px;
+  font-size: 1.3em;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+}
+body #wrapper #contents #eat #eatPrice {
+  line-height: 20px;
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+}
+body #wrapper #contents #eat #eatPrice .natsu {
+  margin-left: -8px;
+}
+body #wrapper #contents #access {
+  margin-top: 220px;
+  position: relative;
+}
+body #wrapper #contents #access #accessTitle {
+  margin-left: 60px;
+}
+body #wrapper #contents #access #accessPhrase {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  font-size: 1.3em;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+}
+body #wrapper #contents #access #accessContents #process {
+  text-align: center;
+  margin-left: 230px;
+}
+body #wrapper #contents #access #accessContents h3 {
+  font-size: 1.3em;
+  margin-left: 150px;
+}
+body #wrapper #contents #access #accessContents #bus {
+  margin: 30px 60px 0 0;
+  text-align: right;
+}
+body #wrapper #contents #access #accessContents #bus a {
+  text-decoration: none;
+  color: #b9b9b9;
+  position: relative;
+  display: inline-block;
+}
+body #wrapper #contents #access #accessContents #bus a:before {
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #b9b9b9;
+  transition: 1s;
+}
+body #wrapper #contents #access #accessContents #bus a:hover:before {
+  width: 100%;
+}
+body #wrapper #contents #access #accessContents #bus a:visited {
+  text-decoration: none;
+  color: #9FCDD8;
+}
+body #wrapper #contents #view {
+  margin-top: 220px;
+}
+body #wrapper #contents #view #viewTitle {
+  margin-left: 1100px;
+}
+body #wrapper #contents #view #swan {
+  margin-top: -20px;
+  position: relative;
+}
+body #wrapper #contents #view #swan #swanImage {
+  float: left;
+}
+body #wrapper #contents #view #swan #swanPhrase {
+  font-size: 1.3em;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 60px;
+  left: 480px;
+}
+body #wrapper #contents #view #flower {
+  margin-top: 200px;
+  position: relative;
+}
+body #wrapper #contents #view #flower #flowerImage {
+  float: right;
+  margin-right: 60px;
+}
+body #wrapper #contents #view #flower #flowerPhrase {
+  font-size: 1.3em;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
+body #wrapper #contents #view #granma {
+  margin-top: 200px;
+  position: relative;
+}
+body #wrapper #contents #view #granma #granmaImage {
+  float: left;
+}
+body #wrapper #contents #view #granma #granmaPhrase {
+  text-align: right;
+  font-size: 1.3em;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 100px;
+  right: 60px;
+}
+body #wrapper #contents #view #granma #granmaPhrase #migi {
+  margin-right: -12px;
+}
+body #wrapper #contents #view #granma a #moreBtn {
+  padding: 10px 14px;
+  border: 1px solid #B9B9B9;
+  font-size: 0.8em;
+  color: #B9B9B9;
+  text-align: center;
+  margin-top: 370px;
+  margin-left: 464px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+body #wrapper #contents #view #granma a #moreBtn #under {
+  display: inline-block;
+  position: relative;
+}
+body #wrapper #contents #view #granma a #moreBtn #under:before {
+  width: 100%;
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #b9b9b9;
+  transition: 0.5s;
+}
+body #wrapper #contents #contactTitle {
+  padding-bottom: 10px;
+  background: #FFFFFF;
+  margin-top: 220px;
+  position: relative;
+  z-index: 1;
+}
+body #wrapper #contact {
+  min-height: 1000px;
+  background: url(../img_top/img_contact.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  margin-top: -60px;
+}
+body #wrapper #contact #info dl {
+  color: #6F6F6F;
+  background: #FFFFFF;
+  margin: 0 auto;
+  width: 404px;
+  height: 193px;
+  padding: 40px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #wrapper #contact dt {
+  display: block;
+  width: 120px;
+  clear: left;
+  float: left;
+  font-size: 1.1em;
+}
+body #wrapper #contact dd {
+  display: block;
+  width: 284px;
+  float: left;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+body #wrapper #contact #sns {
+  width: 135px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #wrapper #contact #blogBtn {
+  padding-right: 10px;
+  float: left;
+  border-right: 0.5px solid #333;
+}
+body #wrapper #contact #blogBtn a {
+  text-decoration: none;
+  color: #6F6F6F;
+}
+body #wrapper #contact #instaBtn a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #6F6F6F;
+}
+body #wrapper .action {
+  visibility: hidden;
+}
+body #wrapper .fadeInDown {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*==================
+レスポンシブ用
+====================*/
+@media screen and (max-width: 768px) {
+  body .title {
+    font-size: 1.1em;
+  }
+  body .backWhite {
+    background: #fff;
+    padding-left: 5px;
+  }
+  body .price {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  body .bgWhite {
+    padding: 2px 5px;
+    background: #fff;
+  }
+  body #containerTop {
+    width: 100%;
+  }
+  body #containerTop #mainTitle {
+    font-size: 1.9em;
+    letter-spacing: 0.7em;
+    min-height: 310px;
+  }
+  body #wrapper #contents {
+    width: 100%;
+  }
+  body #wrapper #contents #navi ul li {
+    line-height: 2.2em;
+  }
+  body #wrapper #contents #navi ul li a {
+    font-size: 0.9em;
+  }
+  body #wrapper #contents #concept {
+    padding-top: 50px;
+    min-height: 337px;
+    position: relative;
+  }
+  body #wrapper #contents #concept #conceptTitle {
+    font-size: 1.1em;
+  }
+  body #wrapper #contents #concept #conceptTitle #conceptTitle2 {
+    line-height: 2em;
+  }
+  body #wrapper #contents #concept #conceptPhrase {
+    font-size: 0.7em;
+    line-height: 3.0em;
+    margin-right: 10px;
+  }
+  body #wrapper #contents #concept #conceptImage1 {
+    position: absolute;
+    width: 282px;
+    height: auto;
+    top: 203px;
+    left: 5px;
+  }
+  body #wrapper #contents #play {
+    margin-top: 65px;
+  }
+  body #wrapper #contents #play #playTitle,
+  body #wrapper #contents #play #eat #eatTitle {
+    font-size: 1.9em;
+    letter-spacing: 0.3em;
+  }
+  body #wrapper #contents #play #boat #boatImg {
+    position: static;
+  }
+  body #wrapper #contents #play #boat #boatImg img {
+    width: 295px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    bottom: -117px;
+  }
+  body #wrapper #contents #play #boat #boatPhrase {
+    font-size: 0.7em;
+    line-height: 3.0em;
+    top: -130px;
+    right: 0;
+  }
+  body #wrapper #contents #play #boat #boatPrice {
+    position: absolute;
+    bottom: -117px;
+    right: 0;
+    opacity: 0.5;
+    line-height: 20px;
+  }
+  body #wrapper #contents #play #boat #boatPrice .hidari {
+    margin-right: 23px;
+  }
+  body #wrapper #contents #play #boat #boatPrice p,
+  body #wrapper #contents #play #bike #bikePrice p,
+  body #wrapper #contents #play #eat #eatPrice p {
+    font-size: 0.5em;
+  }
+  body #wrapper #contents #play #bike #bikeImage {
+    position: static;
+  }
+  body #wrapper #contents #play #bike #bikeImage img {
+    width: 295px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    bottom: -325px;
+  }
+  body #wrapper #contents #play #bike #bikePhrase {
+    font-size: 0.7em;
+    line-height: 3.0em;
+    top: 143px;
+    left: 10px;
+    letter-spacing: 0.5px;
+  }
+  body #wrapper #contents #play #bike #bikePrice {
+    position: absolute;
+    bottom: -325px;
+    left: 10px;
+    opacity: 0.5;
+    padding: 12px 8px;
+    line-height: 20px;
+  }
+  body #wrapper #contents #play #bike #bikePrice .fitari {
+    margin-left: -2px;
+    padding-right: 0;
+  }
+  body #wrapper #contents #eat {
+    margin-top: 803px;
+    height: 178px;
+  }
+  body #wrapper #contents #eat #eatTitle {
+    position: absolute;
+    right: 50px;
+    top: -140px;
+  }
+  body #wrapper #contents #eat #eatImage {
+    position: static;
+  }
+  body #wrapper #contents #eat #eatImage img {
+    width: 295px;
+    height: auto;
+    position: absolute;
+    left: 25px;
+    top: -25px;
+  }
+  body #wrapper #contents #eat #eatPhrase {
+    font-size: 0.7em;
+    line-height: 3.0em;
+    top: 15px;
+    right: 10px;
+  }
+  body #wrapper #contents #eat #eatPrice {
+    position: absolute;
+    height: 35px;
+    top: 142px;
+    right: 4px;
+  }
+  body #wrapper #contents #eat #eatPrice .natsu {
+    padding: 3px 0;
+    margin-left: 0px;
+  }
+  body #wrapper #contents #access {
+    margin-top: 65px;
+    width: 100%;
+  }
+  body #wrapper #contents #access #accessPhrase {
+    position: absolute;
+    width: 227px;
+    top: 127px;
+    left: 53%;
+    transform: translateX(-50%);
+  }
+  body #wrapper #contents #access #accessPhrase .br::before {
+    content: "\a";
+    white-space: pre;
+  }
+  body #wrapper #contents #access #accessPhrase p {
+    font-size: 0.5em;
+    line-height: 2.0em;
+  }
+  body #wrapper #contents #access #accessContents #process {
+    margin-left: 0;
+  }
+  body #wrapper #contents #access #accessContents #process img {
+    width: 100%;
+    height: auto;
+    margin-left: 39px;
+    margin-top: 80px;
+  }
+  body #wrapper #contents #access #accessContents #bus {
+    position: absolute;
+    right: -50px;
+  }
+  body #wrapper #contents #access #accessContents #bus a {
+    font-size: 0.5em;
+  }
+  body #wrapper #contents #view {
+    width: 100%;
+    position: relative;
+  }
+  body #wrapper #contents #view #viewTitle {
+    position: absolute;
+    right: 50px;
+    top: -76px;
+  }
+  body #wrapper #contents #view #swan #swanImage img {
+    width: 295px;
+    height: auto;
+    margin: 110px 0 0 15px;
+  }
+  body #wrapper #contents #view #swan #swanPhrase,
+  body #wrapper #contents #view #flower #flowerPhrase,
+  body #wrapper #contents #view #granma #granmaPhrase {
+    font-size: 0.5em;
+    line-height: 3em;
+  }
+  body #wrapper #contents #view #swan #swanPhrase {
+    position: absolute;
+    top: 150px;
+    left: 142px;
+  }
+  body #wrapper #contents #view #flower {
+    margin-top: 100px;
+  }
+  body #wrapper #contents #view #flower #flowerImage {
+    margin-right: 10px;
+  }
+  body #wrapper #contents #view #flower #flowerImage img {
+    width: 295px;
+    height: auto;
+  }
+  body #wrapper #contents #view #flower #flowerPhrase {
+    z-index: 5;
+    top: 47px;
+    left: 25px;
+  }
+  body #wrapper #contents #view #granma {
+    margin-top: 100px;
+  }
+  body #wrapper #contents #view #granma #granmaImage {
+    margin-left: 10px;
+  }
+  body #wrapper #contents #view #granma #granmaImage img {
+    width: 295px;
+    height: auto;
+  }
+  body #wrapper #contents #view #granma #granmaPhrase {
+    top: 42px;
+    right: 10px;
+  }
+  body #wrapper #contents #view #granma a #moreBtn {
+    padding: 7px 10px;
+    position: absolute;
+    background: #fff;
+    top: -192px;
+    right: 5px;
+    font-size: 0.5em;
+  }
+  body #wrapper #contents #contactTitle {
+    margin: 100px 0 0 60px;
+    padding-bottom: 5px;
+  }
+  body #wrapper #contact {
+    width: 100%;
+    min-height: 400px;
+  }
+  body #wrapper #contact #sns {
+    width: 78px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-31%);
+  }
+  body #wrapper #contact #info dl {
+    width: 168px;
+    height: 111px;
+    padding: 10px 20px;
+  }
+  body #wrapper #contact dt {
+    width: 40px;
+    font-size: 0.5em;
+  }
+  body #wrapper #contact dd {
+    width: 128px;
+    font-size: 0.5em;
+  }
+  body #wrapper #contact #sns #blogBtn a,
+  body #wrapper #contact #sns #instaBtn a {
+    font-size: 0.5em;
+  }
+  body #wrapper #contact #sns #blogBtn {
+    border: none;
+    padding: 0;
+  }
+  body #wrapper #contact #sns #blogBtn a {
+    padding-right: 10px;
+    border-right: 1px solid #b9b9b9;
+  }
+}
+/*==================
+初期化の設定
+====================*/
+/*ベースの要素の設定をリセット*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+p, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*HTML5の新要素をdisplay:blockにする*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/*画像の枠線をクリアして位置の初期値の設定*/
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+/*リンク時の枠の点線をなしにする*/
+a {
+  outline: none;
+}
+
+/*リスト要素の初期値をリセット*/
+ul, ol {
+  list-style: none;
+}
+
+/*右マージンの設定*/
+.mRight20 {
+  margin-right: 20px;
+}
+
+/*clearfixの設定*/
+.clearfix:after {
+  visibility: hidden;
+  /*見えなくする*/
+  height: 0;
+  /*見えなくする*/
+  display: block;
+  /*block要素にする*/
+  font-size: 0;
+  content: " ";
+  clear: both;
+}
+
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
