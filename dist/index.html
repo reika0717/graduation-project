@@ -2,12 +2,11 @@
 <html lang="ja">
 <head>
 	<meta content="鹿児島市内から１時間弱、鹿児島は川内市に位置する小さな池「藺牟田池」。さくら湖商店はそのほとりにある小さな商店です。手つかずの自然をありのまま感じられるように、少しだけ、アクティビティを用意しました。心がきゅうっとなる自然を、一度体験してみませんか。" name="Description">
-	<meta content="さくら湖商店,さくら湖,藺牟田池,藺牟田,いむた,鹿児島,川内,自然,休日,インスタ,インスタジェニック,女子旅,カップル,一人旅,釣り,自転車,ボート,公園,桜島" name="Keywords">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="text/javascript" http-equiv="content-script-type">
 	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
 	<title>さくら湖商店</title>
-	<link href="css/style.css" rel="stylesheet">
+	<link href="assets/style/style.css" rel="stylesheet">
 	<script src="view/js/jquery-3.1.1.min.js" type="text/javascript">
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
@@ -18,133 +17,172 @@
 	</script>
 	<script charset="utf-8" src="//webfont.fontplus.jp/accessor/script/fontplus.js?OhsMb7qAvec%3D&aa=1&ab=2" type="text/javascript">
 	</script>
-	
+
 </head>
 <body>
-	<div id="containerTop">
-		<p class="title" id="mainTitle">さくら湖商店</p><a href="#concept" id="scroll"><span></span>Scroll</a>
-	</div>
-	<div id="wrapper">
-		<div id="contents">
-			<div id="navi">
-				<ul class="clearfix">
+	/*header block*/
+	<header class="header">
+		<div class="heaader__title_layout">
+		<p class="title title_size_big">さくら湖商店</p><a href=".concept" classs="header__scroll"><span></span>Scroll</a>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="contents">
+
+	/*navi block*/
+			<div class="navi">
+				<ul class="clearfix">	//→flexboxに。
 					<li>
-						<a href="#containerTop">top</a>
+						<a href=".header">top</a>
 					</li>
 					<li>
-						<a href="#concept">about</a>
+						<a href=".concept">about</a>
 					</li>
 					<li>
-						<a href="#play">あそぶ</a>
+						<a href=".play">あそぶ</a>
 					</li>
 					<li>
-						<a href="#eat">たべる</a>
+						<a href=".eat">たべる</a>
 					</li>
 					<li>
-						<a href="#access">アクセス</a>
+						<a href=".access">アクセス</a>
 					</li>
 					<li>
-						<a href="#view">いむたの風景</a>
+						<a href=".sight">いむたの風景</a>
 					</li>
 					<li>
-						<a href="#contact">店舗情報</a>
+						<a href=".contact">店舗情報</a>
 					</li>
 				</ul>
 			</div>
-			<div id="concept">
-				<p class="action" id="conceptTitle">手つかずの自然に、<br>
-				<span id="conceptTitle2">心がきゅうっとなる瞬間を</span></p>
-				<div class="action" id="conceptPhrase">
+
+	/*concept block*/
+			<div classs="concept">
+				<div class="concept__title_layout">
+				<p class="fadeIn concept__title_colum_1">手つかずの自然に、<br>
+				<span class="concept__title_colum_2">心がきゅうっとなる瞬間を</span></p>
+				</div>
+				<div class="fadeIn concept__phrase">
 					<p>鹿児島市内から車で５０分、</p>
 					<p>いむた池のほとりに位置する小さな商店。</p>
-					<p><span class="tume">「</span>村の友達が集まる場所が欲しい。」</p>
+					<p><span class="mura_tume">「</span>村の友達が集まる場所が欲しい。」</p>
 					<p>そんなおばあちゃんの思いが作ったお店です。</p>
 					<p>生い茂る緑に囲まれたお店の前には、</p>
 					<p>美しいいむた池の景色が広がっています。</p>
 				</div>
-				<p><img alt="" class="action" height="466" id="conceptImage1" src="img_top/img_concept.png" width="705"></p>
+				<p><img alt="" class="fadeIn concept__image_1" height="466" src="assets/images/index/img_concept.png" width="705"></p>
 			</div>
-			<div id="play">
-				<h2 class="title action" id="playTitle">あそぶ</h2>
-				<div class="clearfix" id="boat">
-					<p id="boatImg"><img alt="ボートイメージ画像" class="action" height="394" src="img_top/img_boat.png" width="585"></p>
-					<div class="action" id="boatPhrase">
-						<p id="phrase1">７つの美しい外輪山に囲まれた池の上で過ごす一時。</p>
-						<p><span class="backWhite">白鳥が近づいてきたら　</span></p>
-						<p><span class="backWhite">シャッターチャンスを逃さないで。</span></p>
+
+	/*play block*/
+			<div class="play">
+				<div class="play__title_layout">
+				<h2 class="title fadeIn">あそぶ</h2>
+				</div>
+		/*boat block*/
+				<div class="clearfix boat">
+					<div class="boat__img">
+						<img class="fadeIn" height="394" src="assets/images/index/img_boat.png" width="585">
 					</div>
-					<div class="price action" id="boatPrice">
-						<p><span class="hidari bgWhite">ボート …　400円</span></p>
-						<p><span class="bgWhite">(1人増える毎に∔100円)</span></p>
+					<div class="fadeIn boat__phrase">
+						<p class="boat__phrase_1">７つの美しい外輪山に囲まれた池の上で過ごす一時。</p>
+						<p><span class="bg_white">白鳥が近づいてきたら　</span></p>
+						<p><span class="bg_White">シャッターチャンスを逃さないで。</span></p>
+					</div>
+					<div class="price boat__price fadeIn">
+						<p><span class="boat_tume bg_white">ボート …　400円</span></p>
+						<p><span class="bg_white">(1人増える毎に∔100円)</span></p>
 					</div>
 				</div>
-				<div class="clearfix" id="bike">
-					<p id="bikeImage"><img alt="自転車イメージ画像" class="action" height="394" src="img_top/img_cycling.png" width="591"></p>
-					<div class="action" id="bikePhrase">
-						<p><span class="backWhite">池の周りをぐるっと一回り。</span></p>
-						<p><span class="backWhite">全速力でかけぬけるもよし。立ち止まってみるのもよし。</span></p>
+		/*bike block*/
+				<div class="clearfix bike">
+					<p class="bike__image"><img class="fadeIn" height="394" src="assets/images/index/img_cycling.png" width="591"></p>
+					<div class="fadeIn bike__phrase">
+						<p><span class="bg_white">池の周りをぐるっと一回り。</span></p>
+						<p><span class="bg_white">全速力でかけぬけるもよし。立ち止まってみるのもよし。</span></p>
 					</div>
-					<div class="price action" id="bikePrice">
-						<p><span class="bgWhite">自転車 … 400円</span></p>
-						<p><span class="bgWhite fitari">（二人乗り 500円）</span></p>
+					<div class="price fadeIn bike__price">
+						<p><span class="bg_white">自転車 … 400円</span></p>
+						<p><span class="bg_white futari_tume">（二人乗り 500円）</span></p>
 					</div>
-				</div>
-			</div>
-			<div id="eat">
-				<h2 class="title action" id="eatTitle">たべる</h2>
-				<p id="eatImage"><img alt="かき氷イメージ画像" class="action" height="400" src="img_top/img_eat.png" width="580"></p>
-				<div class="action" id="eatPhrase">
-					<p><span class="backWhite">汗をかいたら一休み。</span></p>
-					<p><span class="backWhite">たくさん動いたあとは、</span></p>
-					<p><span class="backWhite">美味しさもひとしお。</span></p>
-				</div>
-				<div class="price action" id="eatPrice">
-					<p><span class="bgWhite">かき氷 … 200円</span></p>
-					<p><span class="natsu bgWhite">（夏のみ）</span></p>
 				</div>
 			</div>
-			<div id="access">
-				<h2 class="title action" id="accessTitle">アクセス</h2>
-				<div class="action" id="accessPhrase">
+
+
+		/*eat block*/
+			<div class="eat">
+				<div class="eat__title_layout">
+				<h2 class="title fadeIn">たべる</h2>
+				</div>
+				<p class="eat__image"><img class="fadeIn" height="400" src="assets/images/index/img_eat.png" width="580"></p>
+				<div class="fadeIn eat__phrase">
+					<p><span class="bg_white">汗をかいたら一休み。</span></p>
+					<p><span class="bg_white">たくさん動いたあとは、</span></p>
+					<p><span class="bg_white">美味しさもひとしお。</span></p>
+				</div>
+				<div class="price fadeIn eat__price">
+					<p><span class="bg_white">かき氷 … 200円</span></p>
+					<p><span class="natsu_tume bgWhite">（夏のみ）</span></p>
+				</div>
+			</div>
+
+			/*block access*/
+			<div class="access">
+				<div class="access_title_layout">
+				<h2 class="title fadeIn">アクセス</h2>
+		  	</div>
+				<div class="fadeIn access__phrase">
 					<p>いむた池へお越しの方は車が便利です。</p>
 					<p>山の香りに包まれながら、<span class="br"></span>つかの間のドライブをお楽しみください。</p>
 				</div>
-				<div class="action" id="accessContents">
-					<p id="process"><img alt="" height="649" src="img_top/process.png" width="881"></p>
-					<p id="bus"><a href="bus/bus.html">&gt;&gt;バスでお越しの方</a></p>
+				<div class="fadeIn">
+					<div class="access__img"><img alt="" height="649" src="assets/images/index/process.png" width="881"></div>
+					<p class="access__link_bus"><a href="access.html">&gt;&gt;バスでお越しの方</a></p>
 				</div>
 			</div>
-			<div id="view">
-				<h2 class="title action" id="viewTitle">いむたの風景</h2>
-				<div class="clearfix" id="swan">
-					<p id="swanImage"><img alt="白鳥" class="action" height="350" src="img_top/img1_pic.png" width="525"></p>
-					<div class="action" id="swanPhrase">
-						<p><span class="bgWhite">一見優雅だけど、実は人懐っこい白鳥。</span></p>
-						<p><span class="bgWhite">まっしろな羽がいむたの景色によく映える。</span></p>
+
+			/*block sight*/
+			<div class="sight">
+				<div class="sight__title_layout">
+				<h2 class="title fadeIn">いむたの風景</h2>
+				</div>
+				/*block swan*/
+				<div class="clearfix swan_layout">
+					<p class="swan__image"><img class="fadeIn" height="350" src="assets/images/index/img1_pic.png" width="525"></p>
+					<div class="fadeIn swan__phrase">
+						<p><span class="bg_white">一見優雅だけど、実は人懐っこい白鳥。</span></p>
+						<p><span class="bg_white">まっしろな羽がいむたの景色によく映える。</span></p>
 					</div>
 				</div>
-				<div class="clearfix" id="flower">
-					<div class="action" id="flowerPhrase">
-						<p><span class="bgWhite">いろんなお花が所狭しと咲くいむた池。</span></p>
-						<p><span class="bgWhite">お気に入りをみつけながら一周するのもいいかも。</span></p>
+				/*block flower*/
+				<div class="clearfix flower_layout">
+					<div class="fadeIn flower__phrase">
+						<p><span class="bg_white">いろんなお花が所狭しと咲くいむた池。</span></p>
+						<p><span class="bg_white">お気に入りをみつけながら一周するのもいいかも。</span></p>
 					</div>
-					<p id="flowerImage"><img alt="花" class="action" height="287" src="img_top/img2_pic.png" width="430"></p>
+					<p class="flower__image"><img class="fadeIn" height="287" src="assets/images/index/img2_pic.png" width="430"></p>
 				</div>
-				<div class="clearfix" id="granma">
-					<p id="granmaImage"><img alt="" class="action" height="433" src="img_top/img3_pic.png" width="613"></p>
-					<div class="action" id="granmaPhrase">
-						<p><span class="bgWhite">さくら湖のオーナーは</span></p>
-						<p><span class="bgWhite">笑い上戸のおばあちゃん</span></p>
-						<p><span class="bgWhite">大切そうに握っているのは</span></p>
-						<p><span class="bgWhite" id="migi">きっといつものきな粉もち。</span></p>
-					</div><a href="view/index.html">
-					<p class="action" id="moreBtn"><span id="under">more</span></p></a>
+				/*block granma*/
+				<div class="clearfix granma_layout">
+					<p class="granma__image"><img class="fadeIn" height="433" src="assets/images/index/img3_pic.png" width="613"></p>
+					<div class="fadeIn granma__phrase">
+						<p><span class="bg_white">さくら湖のオーナーは</span></p>
+						<p><span class="bg_white">笑い上戸のおばあちゃん</span></p>
+						<p><span class="bg_White">大切そうに握っているのは</span></p>
+						<p><span class="bg_white granma_tume">きっといつものきな粉もち。</span></p>
+					</div>
+					<a href="site.html" class="fadeIn moreBtn"><span class="under">more</span></a>
 				</div>
 			</div>
-			<h2 class="title action" id="contactTitle">店舗情報</h2>
+
+			<div class="contact__title_layout">
+			<h2 class="title fadeIn contactTitle">店舗情報</h2>  //→店舗情報は背景をまたぐかたちで表現したかったのでやむおえずここにもってきた
+			</div>
 		</div>
-		<div class="clearfix" id="contact">
-			<div id="info">
+
+		/*block contact*/
+		<div class="clearfix contact">
+			<div class="contact__info">
 				<dl>
 					<dt>住所</dt>
 					<dd>〒895-1502<br>
@@ -159,12 +197,16 @@
 					<dd>不定休</dd>
 				</dl>
 			</div>
-			<div id="sns">
-				<p id="blogBtn"><a href="#">blog</a></p>
-				<p id="instaBtn"><a href="#">instagram</a></p>
+			<div class="contact__sns">
+				<div class="sns__btn_blog_layout">
+				<a href="#" class="sns__btn">blog</a>
+				</div>
+				<div class="sns__btn_insta_layout">
+				<a href="#" class="sns__btn">instagram</a>
+				</div>
 			</div>
 		</div>
 	</div>
-<script src="js/action.js" type="text/javascript"></script>
+<script src="assets/script/top.js" type="text/javascript"></script>
 </body>
 </html>
