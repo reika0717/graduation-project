@@ -7,8 +7,6 @@ body p {
   color: #333333;
 }
 body .title {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 35px;
   font-weight: 100;
@@ -20,21 +18,15 @@ body .price {
   font-size: 0.8em;
   color: #b9b9b9;
 }
-body #containerTop {
+body .header {
   min-height: 100vh;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
   z-index: 2;
 }
-body #containerTop #mainTitle {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
+body .header .header__title {
   writing-mode: vertical-rl;
-  font-size: 55px;
   color: #FFFFFF;
   position: absolute;
   top: 50%;
@@ -44,7 +36,12 @@ body #containerTop #mainTitle {
   letter-spacing: 30px;
   min-height: 511px;
 }
-body #containerTop #scroll {
+
+.title--big{
+  font-size: 55px;
+}
+
+body .header .header__scroll {
   text-decoration: none;
   color: #fff;
   font-size: 0.6em;
@@ -54,7 +51,7 @@ body #containerTop #scroll {
   transform: translateX(50%);
   padding-top: 60px;
 }
-body #containerTop #scroll span {
+body .header .header__scroll span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -65,7 +62,7 @@ body #containerTop #scroll span {
   border-radius: 50px;
   box-sizing: border-box;
 }
-body #containerTop #scroll span::before {
+body .header .header__scroll span::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -75,11 +72,11 @@ body #containerTop #scroll span::before {
   margin-left: -3px;
   background-color: #fff;
   border-radius: 100%;
-  -webkit-animation: sdb 2s infinite;
   animation: sdb 2s infinite;
   box-sizing: border-box;
 }
-body #wrapper {
+
+body .wrapper {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -87,68 +84,35 @@ body #wrapper {
   z-index: 1;
   position: relative;
 }
-body #wrapper #contents {
+body .wrapper .wrapper__inner {
   width: 1200px;
   margin: 0 auto;
 }
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-body #wrapper #contents #navi {
+body .wrapper .wrapper__inner .navi {
   position: fixed;
   top: 0;
   right: 10%;
   transition: .3s;
   z-index: 9998;
 }
-body #wrapper #contents #navi ul {
+body .wrapper .wrapper__inner .navi ul {
   background-color: #FFFFFF;
   opacity: 0.6;
   padding: 25px 15px 40px;
 }
-body #wrapper #contents #navi ul li {
-  -webkit-writing-mode: vertical-rl;
+body .wrapper .wrapper__inner .navi ul li {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   float: right;
   line-height: 43px;
   color: #000000;
 }
-body #wrapper #contents #navi ul li a {
+body .wrapper .wrapper__inner .navi ul li a {
   text-decoration: none;
   color: #6F6F6F;
   transition: .3s;
 }
-body #wrapper #contents #concept {
+body .wrapper .wrapper__inner .concept {
   width: 100%;
   min-height: 772px;
   padding-top: 220px;
@@ -157,47 +121,47 @@ body #wrapper #contents #concept {
   writing-mode: vertical-rl;
   position: relative;
 }
-body #wrapper #contents #concept #conceptImage1 {
+body .wrapper .wrapper__inner .concept .concept__image--1 {
   width: 705px;
   height: 466px;
   position: absolute;
   left: 0;
   top: 525px;
 }
-body #wrapper #contents #concept #conceptTitle {
+body .wrapper .wrapper__inner .concept .concept__title {
   font-size: 35px;
   position: relative;
   z-index: 2;
 }
-body #wrapper #contents #concept #conceptTitle #conceptTitle2 {
+body .wrapper .wrapper__inner .concept .conceptTitle .concept__title--2 {
   line-height: 122px;
 }
-body #wrapper #contents #concept #conceptPhrase {
+body .wrapper .wrapper__inner .concept .concept__phrase {
   position: relative;
   line-height: 80px;
   font-size: 1.3em;
   z-index: 2;
 }
-body #wrapper #contents #concept #conceptPhrase .tume {
+body .wrapper .wrapper__inner .concept .conceptPhrase .mura_tume {
   display: inline-block;
   margin-top: -0.5em;
   margin-bottom: 0.5em;
 }
-body #wrapper #contents #play {
+body .wrapper .wrapper__inner .play {
   margin-top: 320px;
 }
-body #wrapper #contents #play #playTitle {
+body .wrapper .wrapper__inner .play .play__title {
   margin-left: 60px;
 }
-body #wrapper #contents #play #boat {
+body .wrapper .wrapper__inner .play .boat {
   margin-top: 180px;
   position: relative;
 }
-body #wrapper #contents #play #boat #boatImg {
+body .wrapper .wrapper__inner .play .boat .boat__img {
   float: left;
   margin-left: 60px;
 }
-body #wrapper #contents #play #boat #boatPhrase {
+body .wrapper .wrapper__inner .play .boat .boat__phrase {
   text-align: right;
   position: absolute;
   top: 60px;
@@ -206,27 +170,27 @@ body #wrapper #contents #play #boat #boatPhrase {
   line-height: 40px;
   letter-spacing: 1.5px;
 }
-body #wrapper #contents #play #boat #boatPhrase #phrase1 {
+body .wrapper .wrapper__inner .play .boat .boatPhrase .boat__phrase--1 {
   background: #FFFFFF;
 }
-body #wrapper #contents #play #boat #boatPrice {
+body .wrapper .wrapper__inner .play .boat .boat__price {
   position: absolute;
   text-align: right;
   right: 50px;
   bottom: 0px;
 }
-body #wrapper #contents #play #boat #boatPrice .hidari {
+body .wrapper .wrapper__inner .play .boat .boatPrice .boat_tume {
   margin-right: 37px;
 }
-body #wrapper #contents #play #bike {
+body .wrapper .wrapper__inner .play .bike {
   margin-top: 280px;
   position: relative;
 }
-body #wrapper #contents #play #bike #bikeImage {
+body .wrapper .wrapper__inner .play .bike .bike__image {
   float: right;
   margin-right: 60px;
 }
-body #wrapper #contents #play #bike #bikePhrase {
+body .wrapper .wrapper__inner .play .bike .bike__phrase {
   position: absolute;
   top: 100px;
   left: 100px;
@@ -234,27 +198,27 @@ body #wrapper #contents #play #bike #bikePhrase {
   line-height: 40px;
   letter-spacing: 1.5px;
 }
-body #wrapper #contents #play #bike #bikePrice {
+body .wrapper .wrapper__inner .play .bike .bike__price {
   position: absolute;
   left: 100px;
   bottom: 0;
 }
-body #wrapper #contents #play #bike #bikePrice .fitari {
+body .wrapper .wrapper__inner .play .bike .bikePrice .futari_tume {
   margin-left: -7px;
   margin-right: -7px;
 }
-body #wrapper #contents #eat {
+body .wrapper .wrapper__inner .eat {
   margin-top: 220px;
   position: relative;
 }
-body #wrapper #contents #eat #eatTitle {
+body .wrapper .wrapper__inner .eat .eat__title {
   margin-left: 1100px;
 }
-body #wrapper #contents #eat #eatImage {
+body .wrapper .wrapper__inner .eat .eat__image {
   margin-top: 100px;
   margin-left: 180px;
 }
-body #wrapper #contents #eat #eatPhrase {
+body .wrapper .wrapper__inner .eat .eat__phrase {
   position: absolute;
   text-align: right;
   top: 320px;
@@ -263,23 +227,23 @@ body #wrapper #contents #eat #eatPhrase {
   line-height: 40px;
   letter-spacing: 1.5px;
 }
-body #wrapper #contents #eat #eatPrice {
+body .wrapper .wrapper__inner .eat .eat__price {
   line-height: 20px;
   position: absolute;
   right: 60px;
   bottom: 0;
 }
-body #wrapper #contents #eat #eatPrice .natsu {
+body .wrapper .wrapper__inner .eat .eat__price .natsu_tume {
   margin-left: -8px;
 }
-body #wrapper #contents #access {
+body .wrapper .wrapper__inner .access {
   margin-top: 220px;
   position: relative;
 }
-body #wrapper #contents #access #accessTitle {
+body .wrapper .wrapper__inner .access .access_title {
   margin-left: 60px;
 }
-body #wrapper #contents #access #accessPhrase {
+body .wrapper .wrapper__inner .access .access__phrase {
   position: absolute;
   top: 150px;
   left: 300px;
@@ -287,25 +251,25 @@ body #wrapper #contents #access #accessPhrase {
   line-height: 40px;
   letter-spacing: 1.5px;
 }
-body #wrapper #contents #access #accessContents #process {
+body .wrapper .wrapper__inner .access .process {
   text-align: center;
   margin-left: 230px;
 }
-body #wrapper #contents #access #accessContents h3 {
+body .wrapper .wrapper__inner .access h3 {
   font-size: 1.3em;
   margin-left: 150px;
 }
-body #wrapper #contents #access #accessContents #bus {
+body .wrapper .wrapper__inner .access .bus {
   margin: 30px 60px 0 0;
   text-align: right;
 }
-body #wrapper #contents #access #accessContents #bus a {
+body .wrapper .wrapper__inner .access .bus a {
   text-decoration: none;
   color: #b9b9b9;
   position: relative;
   display: inline-block;
 }
-body #wrapper #contents #access #accessContents #bus a:before {
+body .wrapper .wrapper__inner .access .bus a:before {
   position: absolute;
   top: 1.5em;
   left: 0;
@@ -316,27 +280,27 @@ body #wrapper #contents #access #accessContents #bus a:before {
   background: #b9b9b9;
   transition: 1s;
 }
-body #wrapper #contents #access #accessContents #bus a:hover:before {
+body .wrapper .wrapper__inner .access .bus a:hover:before {
   width: 100%;
 }
-body #wrapper #contents #access #accessContents #bus a:visited {
+body .wrapper .wrapper__inner .access .bus a:visited {
   text-decoration: none;
   color: #9FCDD8;
 }
-body #wrapper #contents #view {
+body .wrapper .wrapper__inner .sight {
   margin-top: 220px;
 }
-body #wrapper #contents #view #viewTitle {
+body .wrapper .wrapper__inner .sight .sight__title {
   margin-left: 1100px;
 }
-body #wrapper #contents #view #swan {
+body .wrapper .wrapper__inner .sight .sight__swan {
   margin-top: -20px;
   position: relative;
 }
-body #wrapper #contents #view #swan #swanImage {
+body .wrapper .wrapper__inner .sight .sight__swan .swan__image {
   float: left;
 }
-body #wrapper #contents #view #swan #swanPhrase {
+body .wrapper .wrapper__inner .sight .sight__swan .swan__image {
   font-size: 1.3em;
   line-height: 50px;
   letter-spacing: 1.5px;
@@ -344,15 +308,15 @@ body #wrapper #contents #view #swan #swanPhrase {
   top: 60px;
   left: 480px;
 }
-body #wrapper #contents #view #flower {
+body .wrapper .wrapper__inner .sight .flower {
   margin-top: 200px;
   position: relative;
 }
-body #wrapper #contents #view #flower #flowerImage {
+body .wrapper .wrapper__inner .sight .flower .flower__image {
   float: right;
   margin-right: 60px;
 }
-body #wrapper #contents #view #flower #flowerPhrase {
+body .wrapper .wrapper__inner .sight .flower .flower__phrase {
   font-size: 1.3em;
   line-height: 50px;
   letter-spacing: 1.5px;
@@ -360,14 +324,14 @@ body #wrapper #contents #view #flower #flowerPhrase {
   top: 70px;
   left: 100px;
 }
-body #wrapper #contents #view #granma {
+body .wrapper .wrapper__inner .sight .granma {
   margin-top: 200px;
   position: relative;
 }
-body #wrapper #contents #view #granma #granmaImage {
+body .wrapper .wrapper__inner .sight .granma .granma__image {
   float: left;
 }
-body #wrapper #contents #view #granma #granmaPhrase {
+body .wrapper .wrapper__inner .sight .granma .granma__phrase {
   text-align: right;
   font-size: 1.3em;
   line-height: 50px;
@@ -376,10 +340,10 @@ body #wrapper #contents #view #granma #granmaPhrase {
   top: 100px;
   right: 60px;
 }
-body #wrapper #contents #view #granma #granmaPhrase #migi {
+body .wrapper .wrapper__inner .sight .granma .granmaPhrase .granma_tume {
   margin-right: -12px;
 }
-body #wrapper #contents #view #granma a #moreBtn {
+body .wrapper .wrapper__inner .sight .granma a .moreBtn {
   padding: 10px 14px;
   border: 1px solid #B9B9B9;
   font-size: 0.8em;
@@ -391,11 +355,11 @@ body #wrapper #contents #view #granma a #moreBtn {
   display: inline-block;
   position: relative;
 }
-body #wrapper #contents #view #granma a #moreBtn #under {
+body .wrapper .wrapper__inner .sight .granma a .moreBtn .under {
   display: inline-block;
   position: relative;
 }
-body #wrapper #contents #view #granma a #moreBtn #under:before {
+body .wrapper .wrapper__inner .sight .granma a .moreBtn .under:before {
   width: 100%;
   position: absolute;
   top: 1.3em;
@@ -407,14 +371,14 @@ body #wrapper #contents #view #granma a #moreBtn #under:before {
   background: #b9b9b9;
   transition: 0.5s;
 }
-body #wrapper #contents #contactTitle {
+body .wrapper .wrapper__inner .contact__title {
   padding-bottom: 10px;
   background: #FFFFFF;
   margin-top: 220px;
   position: relative;
   z-index: 1;
 }
-body #wrapper #contact {
+body .wrapper .contact {
   min-height: 1000px;
   background: url(../img_top/img_contact.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -424,7 +388,7 @@ body #wrapper #contact {
   position: relative;
   margin-top: -60px;
 }
-body #wrapper #contact #info dl {
+body .wrapper .contact .contact__info dl {
   color: #6F6F6F;
   background: #FFFFFF;
   margin: 0 auto;
@@ -436,74 +400,49 @@ body #wrapper #contact #info dl {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body #wrapper #contact dt {
+body .wrapper .contact .contact__info dt {
   display: block;
   width: 120px;
   clear: left;
   float: left;
   font-size: 1.1em;
 }
-body #wrapper #contact dd {
+body .wrapper .contact .contact__info dd {
   display: block;
   width: 284px;
   float: left;
   margin-bottom: 10px;
   font-size: 1.1em;
 }
-body #wrapper #contact #sns {
+body .wrapper .contact .contact__sns {
   width: 135px;
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
-body #wrapper #contact #blogBtn {
+body .wrapper .contact .btn__blog {
   padding-right: 10px;
   float: left;
   border-right: 0.5px solid #333;
 }
-body #wrapper #contact #blogBtn a {
+body .wrapper .contact .sns__btn {
   text-decoration: none;
   color: #6F6F6F;
 }
-body #wrapper #contact #instaBtn a {
+body .wrapper .contact .btn__insta .sns__btn {
   margin-left: 10px;
   text-decoration: none;
   color: #6F6F6F;
 }
-body #wrapper .action {
+body .wrapper .fadeIn {
   visibility: hidden;
 }
-body #wrapper .fadeInDown {
-  -webkit-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
+body .wrapper .fadeInDown {
   animation-fill-mode: both;
-  -webkit-animation-duration: 1.5s;
-  -ms-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   visibility: visible !important;
-}
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(1.1, 1.1);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-  }
-  100% {
-    opacity: 1;
-  }
 }
 /*==================
 レスポンシブ用
@@ -512,116 +451,112 @@ body #wrapper .fadeInDown {
   body .title {
     font-size: 1.1em;
   }
-  body .backWhite {
-    background: #fff;
-    padding-left: 5px;
-  }
   body .price {
     padding: 0;
     border: none;
     background: none;
   }
-  body .bgWhite {
+  body .bg_white {
     padding: 2px 5px;
     background: #fff;
   }
-  body #containerTop {
+  body .header {
     width: 100%;
   }
-  body #containerTop #mainTitle {
+  body .header .header__title {
     font-size: 1.9em;
     letter-spacing: 0.7em;
     min-height: 310px;
   }
-  body #wrapper #contents {
+  body .wrapper .wrapper__inner {
     width: 100%;
   }
-  body #wrapper #contents #navi ul li {
+  body .wrapper .wrapper__inner .navi ul li {
     line-height: 2.2em;
   }
-  body #wrapper #contents #navi ul li a {
+  body .wrapper .wrapper__inner .navi ul li a {
     font-size: 0.9em;
   }
-  body #wrapper #contents #concept {
+  body .wrapper .wrapper__inner .concept {
     padding-top: 50px;
     min-height: 337px;
     position: relative;
   }
-  body #wrapper #contents #concept #conceptTitle {
+  body .wrapper .wrapper__inner .concept .concept__title {
     font-size: 1.1em;
   }
-  body #wrapper #contents #concept #conceptTitle #conceptTitle2 {
+  body .wrapper .wrapper__inner .concept .concept__title .concept__title--2 {
     line-height: 2em;
   }
-  body #wrapper #contents #concept #conceptPhrase {
+  body .wrapper .wrapper__inner .concept .concept__phrase {
     font-size: 0.7em;
     line-height: 3.0em;
     margin-right: 10px;
   }
-  body #wrapper #contents #concept #conceptImage1 {
+  body .wrapper .wrapper__inner .concept .concept__image {
     position: absolute;
     width: 282px;
     height: auto;
     top: 203px;
     left: 5px;
   }
-  body #wrapper #contents #play {
+  body .wrapper .wrapper__inner .play {
     margin-top: 65px;
   }
-  body #wrapper #contents #play #playTitle,
-  body #wrapper #contents #play #eat #eatTitle {
+  body .wrapper .wrapper__inner .play .play__title,
+  body .wrapper .wrapper__inner .play .eat .eat__title {
     font-size: 1.9em;
     letter-spacing: 0.3em;
   }
-  body #wrapper #contents #play #boat #boatImg {
+  body .wrapper .wrapper__inner .play .boat .boat__img {
     position: static;
   }
-  body #wrapper #contents #play #boat #boatImg img {
+  body .wrapper .wrapper__inner .play .boat .boat__img img {
     width: 295px;
     height: auto;
     position: absolute;
     left: 10px;
     bottom: -117px;
   }
-  body #wrapper #contents #play #boat #boatPhrase {
+  body .wrapper .wrapper__inner .play .boat .boat__phrase {
     font-size: 0.7em;
     line-height: 3.0em;
     top: -130px;
     right: 0;
   }
-  body #wrapper #contents #play #boat #boatPrice {
+  body .wrapper .wrapper__inner .play .boat .boat__price {
     position: absolute;
     bottom: -117px;
     right: 0;
     opacity: 0.5;
     line-height: 20px;
   }
-  body #wrapper #contents #play #boat #boatPrice .hidari {
+  body .wrapper .wrapper__inner .play .boat .boat__price .boat_tume {
     margin-right: 23px;
   }
-  body #wrapper #contents #play #boat #boatPrice p,
-  body #wrapper #contents #play #bike #bikePrice p,
-  body #wrapper #contents #play #eat #eatPrice p {
+  body .wrapper .wrapper__inner .play .boat .boat__price p,
+  body .wrapper .wrapper__inner .play .bike .bike__price p,
+  body .wrapper .wrapper__inner .play .eat .eat__price p {
     font-size: 0.5em;
   }
-  body #wrapper #contents #play #bike #bikeImage {
+  body .wrapper .wrapper__inner .play .bike .bike__image {
     position: static;
   }
-  body #wrapper #contents #play #bike #bikeImage img {
+  body .wrapper .wrapper__inner .play .bike .bike__image img {
     width: 295px;
     height: auto;
     position: absolute;
     right: 10px;
     bottom: -325px;
   }
-  body #wrapper #contents #play #bike #bikePhrase {
+  body .wrapper .wrapper__inner .play .bike .bike__phrase {
     font-size: 0.7em;
     line-height: 3.0em;
     top: 143px;
     left: 10px;
     letter-spacing: 0.5px;
   }
-  body #wrapper #contents #play #bike #bikePrice {
+  body .wrapper .wrapper__inner .play .bike .bike__price {
     position: absolute;
     bottom: -325px;
     left: 10px;
@@ -629,135 +564,135 @@ body #wrapper .fadeInDown {
     padding: 12px 8px;
     line-height: 20px;
   }
-  body #wrapper #contents #play #bike #bikePrice .fitari {
+  body .wrapper .wrapper__inner .play .bike .bike__price .futari_tume {
     margin-left: -2px;
     padding-right: 0;
   }
-  body #wrapper #contents #eat {
+  body .wrapper .wrapper__inner .eat {
     margin-top: 803px;
     height: 178px;
   }
-  body #wrapper #contents #eat #eatTitle {
+  body .wrapper .wrapper__inner .eat .eat__title {
     position: absolute;
     right: 50px;
     top: -140px;
   }
-  body #wrapper #contents #eat #eatImage {
+  body .wrapper .wrapper__inner .eat .eat__image {
     position: static;
   }
-  body #wrapper #contents #eat #eatImage img {
+  body .wrapper .wrapper__inner .eat .eat__image img {
     width: 295px;
     height: auto;
     position: absolute;
     left: 25px;
     top: -25px;
   }
-  body #wrapper #contents #eat #eatPhrase {
+  body .wrapper .wrapper__inner .eat .eat__phrase {
     font-size: 0.7em;
     line-height: 3.0em;
     top: 15px;
     right: 10px;
   }
-  body #wrapper #contents #eat #eatPrice {
+  body .wrapper .wrapper__inner .eat .eat__price {
     position: absolute;
     height: 35px;
     top: 142px;
     right: 4px;
   }
-  body #wrapper #contents #eat #eatPrice .natsu {
+  body .wrapper .wrapper__inner .eat .eat__price .natsu_tume {
     padding: 3px 0;
     margin-left: 0px;
   }
-  body #wrapper #contents #access {
+  body .wrapper .wrapper__inner .access {
     margin-top: 65px;
     width: 100%;
   }
-  body #wrapper #contents #access #accessPhrase {
+  body .wrapper .wrapper__inner .access .access__phrase {
     position: absolute;
     width: 227px;
     top: 127px;
     left: 53%;
     transform: translateX(-50%);
   }
-  body #wrapper #contents #access #accessPhrase .br::before {
+  body .wrapper .wrapper__inner .access .access__phrase .br::before {
     content: "\a";
     white-space: pre;
   }
-  body #wrapper #contents #access #accessPhrase p {
+  body .wrapper .wrapper__inner .access .access__phrase p {
     font-size: 0.5em;
     line-height: 2.0em;
   }
-  body #wrapper #contents #access #accessContents #process {
+  body .wrapper .wrapper__inner .access .access__img {
     margin-left: 0;
   }
-  body #wrapper #contents #access #accessContents #process img {
+  body .wrapper .wrapper__inner .access .access__img img {
     width: 100%;
     height: auto;
     margin-left: 39px;
     margin-top: 80px;
   }
-  body #wrapper #contents #access #accessContents #bus {
+  body .wrapper .wrapper__inner .access .access__link {
     position: absolute;
     right: -50px;
   }
-  body #wrapper #contents #access #accessContents #bus a {
+  body .wrapper .wrapper__inner .access .access__link a {
     font-size: 0.5em;
   }
-  body #wrapper #contents #view {
+  body .wrapper .wrapper__inner .sight {
     width: 100%;
     position: relative;
   }
-  body #wrapper #contents #view #viewTitle {
+  body .wrapper .wrapper__inner .sight .sight__title {
     position: absolute;
     right: 50px;
     top: -76px;
   }
-  body #wrapper #contents #view #swan #swanImage img {
+  body .wrapper .wrapper__inner .sight .sight__swan .swan__image img {
     width: 295px;
     height: auto;
     margin: 110px 0 0 15px;
   }
-  body #wrapper #contents #view #swan #swanPhrase,
-  body #wrapper #contents #view #flower #flowerPhrase,
-  body #wrapper #contents #view #granma #granmaPhrase {
+  body .wrapper .wrapper__inner .sight .sight__swan .swan__phrase,
+  body .wrapper .wrapper__inner .sight .flower .flower__phrase,
+  body .wrapper .wrapper__inner .sight .granma .granma__phrase {
     font-size: 0.5em;
     line-height: 3em;
   }
-  body #wrapper #contents #view #swan #swanPhrase {
+  body .wrapper .wrapper__inner .sight .sight__swan .swan__phrase {
     position: absolute;
     top: 150px;
     left: 142px;
   }
-  body #wrapper #contents #view #flower {
+  body .wrapper .wrapper__inner .sight .flower {
     margin-top: 100px;
   }
-  body #wrapper #contents #view #flower #flowerImage {
+  body .wrapper .wrapper__inner .sight .flower .flower__image {
     margin-right: 10px;
   }
-  body #wrapper #contents #view #flower #flowerImage img {
+  body .wrapper .wrapper__inner .sight .flower .flower__image img {
     width: 295px;
     height: auto;
   }
-  body #wrapper #contents #view #flower #flowerPhrase {
+  body .wrapper .wrapper__inner .sight .flower .flower__phrase {
     z-index: 5;
     top: 47px;
     left: 25px;
   }
-  body #wrapper #contents #view #granma {
+  body .wrapper .wrapper__inner .sight .granma {
     margin-top: 100px;
   }
-  body #wrapper #contents #view #granma #granmaImage {
+  body .wrapper .wrapper__inner .sight .granma .granma__image {
     margin-left: 10px;
   }
-  body #wrapper #contents #view #granma #granmaImage img {
+  body .wrapper .wrapper__inner .sight .granma .granma__image img {
     width: 295px;
     height: auto;
   }
-  body #wrapper #contents #view #granma #granmaPhrase {
+  body .wrapper .wrapper__inner .sight .granma .granma__phrase {
     top: 42px;
     right: 10px;
   }
-  body #wrapper #contents #view #granma a #moreBtn {
+  body .wrapper .wrapper__inner .sight .granma .moreBtn {
     padding: 7px 10px;
     position: absolute;
     background: #fff;
@@ -765,43 +700,43 @@ body #wrapper .fadeInDown {
     right: 5px;
     font-size: 0.5em;
   }
-  body #wrapper #contents #contactTitle {
+  body .wrapper .wrapper__inner .contact__title {
     margin: 100px 0 0 60px;
     padding-bottom: 5px;
   }
-  body #wrapper #contact {
+  body .wrapper .contact {
     width: 100%;
     min-height: 400px;
   }
-  body #wrapper #contact #sns {
+  body .wrapper .contact .contact__sns {
     width: 78px;
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-31%);
   }
-  body #wrapper #contact #info dl {
+  body .wrapper .contact .contact__info dl {
     width: 168px;
     height: 111px;
     padding: 10px 20px;
   }
-  body #wrapper #contact dt {
+  body .wrapper .contact .contact__info dt {
     width: 40px;
     font-size: 0.5em;
   }
-  body #wrapper #contact dd {
+  body .wrapper .contact .contact__info dd {
     width: 128px;
     font-size: 0.5em;
   }
-  body #wrapper #contact #sns #blogBtn a,
-  body #wrapper #contact #sns #instaBtn a {
+  body .wrapper .contact .contact__sns .btn__blog a,
+  body .wrapper .contact .contact__sns .btn__insta a {
     font-size: 0.5em;
   }
-  body #wrapper #contact #sns #blogBtn {
+  body .wrapper .contact .contact__sns .btn__blog {
     border: none;
     padding: 0;
   }
-  body #wrapper #contact #sns #blogBtn a {
+  body .wrapper .contact .contact__sns .btn__blog a {
     padding-right: 10px;
     border-right: 1px solid #b9b9b9;
   }
