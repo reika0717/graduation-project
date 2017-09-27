@@ -88,5 +88,7 @@ typings/
 # dotenv environment variables file
 .env
 
-
+# Developer added
+dist/assets/script/
+dist/assets/style/
 
