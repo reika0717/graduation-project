@@ -1,30 +1,27 @@
-		/*header背景の動画*/
-		 $('document').ready(function() {
-  	   var options = { videoId: 'e4Is32W-ppk', start: 3 };
- 	   $('.wrapper').tubular(options);
- 	   // f-UGhWj1xww cool sepia hd
- 	   // 49SKbS7Xwf4 beautiful barn sepia
-	   });
+$('document').ready(function() {
+  var options = { videoId: 'e4Is32W-ppk', start: 3 };
+  $('#wrapper').tubular(options);
+  // f-UGhWj1xww cool sepia hd
+  // 49SKbS7Xwf4 beautiful barn sepia
+});
 
 	   $(document).ready(function () {
-	     $('.header').tubular({
+	     $('#containerTop').tubular({
 	       videoId: 'crpiAoM_6rU'
 	     });
 	   });
 
-		 /*スクロールに合わせてコンテンツをfadeInさせる*/
 	   $(window).scroll(function () {
 	     var windowHeight = $(window).height(),
 	       topWindow = $(window).scrollTop();
-	     $('.fadeIn').each(function () {
+	     $('.action').each(function () {
 	       var targetPosition = $(this).offset().top;
 	       if (topWindow > targetPosition - windowHeight + 200) {
-	         $(this).addClass(".fadeInDown");
+	         $(this).addClass("fadeInDown");
 	       }
 	     });
 	   });
 
-		 /*naviから選択された場所にスムーズに移動する*/
 	   $(function () {
 	     // スクロールのオフセット値
 	     var offsetY = 0;
@@ -49,24 +46,23 @@
 	     });
 	   });
 
-		 /*スクロール上下によるnaviの表示非表示*/
-	   var menuHeight = $(".navi").height();
+	   var menuHeight = $("#navi").height();
 	   var startPos = 0;
 	   $(window).scroll(function () {
 	     var currentPos = $(this).scrollTop();
 	     if (currentPos > startPos) {
 	       if ($(window).scrollTop() >= 200) {
-	         $(".navi").css("top", "-" + 170 + "px");
+	         $("#navi").css("top", "-" + 170 + "px");
 	               }
 	       }else{
-	       $(".navi").css("top", 0 + "px");
+	       $("#navi").css("top", 0 + "px");
 	     }
 	     startPos = currentPos;
 	       });
 
 	$(function() {
-	   var navi = $('.navi');
-	   var topHeight = $(".header").height();
+	   var navi = $('#navi');
+	   var topHeight = $("#containerTop").height();
 	     navi.hide();
 	   $(window).scroll(function () {
 	     var currentPos = $(this).scrollTop();

@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 $(function(){
 	$(".group").fancybox();
 	});
@@ -26,6 +24,3 @@ $(function(){
         }
     });
 });
-
-
-</script>
