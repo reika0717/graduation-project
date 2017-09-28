@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src/script -d dist/assets/script"
+    "build": "babel src/script -d dist/assets/script",
+    "style:watch": "node-sass src/style/style.scss dist/assets/style/style.css && node-sass -w src/style/style.scss dist/assets/style/style.css"
   },
   "repository": {
     "type": "git",
