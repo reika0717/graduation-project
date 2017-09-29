@@ -1,13 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-body{
+.sight__wrapper{
 	width:1128px;
-    height: 100%;
+  height: 100%;
 	margin:0 auto;
 	position: relative;
 }
 
-#title{
+.sight__title--2{
     background: #FFFFFF;
     margin-top: 58px;
     padding: 20px 15px;
@@ -16,23 +16,23 @@ body{
     left: 46px;
     z-index: 2;
 		border:1px solid #DADADA;
-	
+
 }
 
-#ill_bike{
+.ill_bike{
 	width:450px;
 	height:auto;
 	position: absolute;
 	right:-85px;
 	top:276px;
 	animation-duration: 3s;
-	animation-name: slide-hidari; 
+	animation-name: slide-hidari;
 	}
 
 @keyframes slide-hidari{
 	from{
 		right:0px;
-		}      
+		}
 	to	{
 		right:-85px;
 	}
@@ -42,25 +42,25 @@ ul,ol{
   list-style: none;
 }
 
-#imgWrap{
+.imgWrap{
 	width:1128px;
 	position: absolute;
 	top:452px;
 	left: 0;}
 
-#imgWrap ul{
+.imgWrap ul{
 	margin: 0 auto;
 	width:1128px;
 }
 
-#imgWrap li{
+.imgWrap li{
 	margin: 4px;
 	width: 180px;
 	height:180px;
 	float:left;
 }
 
-#imgWrap li img{
+.imgWrap li img{
 	display: none;
 }
 
@@ -73,7 +73,7 @@ ul,ol{
 	object-position:40% 50%;
 }
 
-#illust{
+.illust{
 	position: relative;
 }
 

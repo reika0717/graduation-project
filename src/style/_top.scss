@@ -5,16 +5,14 @@
 p {
   color: #333333;
 	}
-	
+
 .title {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 35px;
   font-weight: 100;
   color: #6f6f6f;
 }
-	
+
 .price {
   padding: 12px 14px;
   border: 1px solid #B9B9B9;
@@ -22,19 +20,14 @@ p {
   color: #b9b9b9;
 }
 
-#containerTop {
+.header {
   min-height: 100vh;
 	width:100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
 	z-index:2;
 
-#mainTitle {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
+.title--big {
   writing-mode: vertical-rl;
   font-size: 55px;
   color: #FFFFFF;
@@ -47,7 +40,7 @@ p {
 	min-height: 511px;
  }
 
-#scroll {
+&__scroll {
   text-decoration: none;
   color: #fff;
   font-size:0.6em;
@@ -56,7 +49,7 @@ p {
   right: 50%;
   transform: translateX(50%);
   padding-top: 60px;
-	
+
 span {
   position: absolute;
   top: 0;
@@ -86,7 +79,7 @@ span::before {
  }
 }
 
-#wrapper {
+.wrapper {
   width: 100%;
 	overflow: hidden;
 	margin: 0 auto;
@@ -94,45 +87,11 @@ span::before {
 	z-index: 1;
 	position: relative;
 
-#contents {
+&__inner {
   width: 1200px;
   margin: 0 auto;
 
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes sdb {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-	
-#navi{
+.navi{
   position: fixed;
   top: 0;
   right: 10%;
@@ -143,15 +102,13 @@ span::before {
   background-color: #FFFFFF;
   opacity: 0.6;
   padding: 25px 15px 40px;
-	
+
 	li {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   float: right;
   line-height: 43px;
   color: #000000;
-	
+
 	a {
   text-decoration: none;
   color: #6F6F6F;
@@ -161,16 +118,14 @@ span::before {
  }
 }
 
-#concept {
+.concept {
 	width:100%;
   min-height: 772px;
   padding-top: 220px;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   position: relative;
 
-#conceptImage1 {
+&__image--1 {
 	 width:705px;
 	 height:466px;
 	position: absolute;
@@ -178,23 +133,24 @@ span::before {
 	top:525px;
 }
 
-#conceptTitle {
+&__title {
   font-size: 35px;
   position: relative;
   z-index: 2;
 
-#conceptTitle2{
+&--2{
+  font-size: 35px;
   line-height:122px;
 	}
 }
 
-#conceptPhrase {
+&__phrase {
   position: relative;
   line-height: 80px;
   font-size: 1.3em;
   z-index: 2;
 
-.tume {
+.mura_tume {
   display: inline-block;
   margin-top: -0.5em;
   margin-bottom: 0.5em;
@@ -202,23 +158,19 @@ span::before {
  }
 }
 
-#play {
+.play {
   margin-top: 320px;
 
-#playTitle {
-  margin-left: 60px;
-}
-
-#boat {
+.boat {
   margin-top: 180px;
   position: relative;
 
-#boatImg {
+&__img {
   float: left;
   margin-left: 60px;
 }
 
-#boatPhrase {
+&__phrase {
   text-align: right;
   position: absolute;
   top: 60px;
@@ -227,33 +179,33 @@ span::before {
   line-height: 40px;
   letter-spacing: 1.5px;
 
-#phrase1 {
+.boat__phrase--1 {
   background: #FFFFFF;
 	}
 }
 
-#boatPrice {
+&__price {
   position: absolute;
   text-align: right;
   right: 50px;
   bottom: 0px;
 
-.hidari{
-	margin-right:37px;	
+&_tume{
+	margin-right:37px;
 	}
  }
 }
 
-#bike {
+.bike {
   margin-top: 280px;
   position: relative;
 
-#bikeImage {
+&__image {
   float: right;
   margin-right: 60px;
 }
 
-#bikePhrase {
+&__phrase {
   position: absolute;
   top: 100px;
   left: 100px;
@@ -262,33 +214,33 @@ span::before {
   letter-spacing: 1.5px;
 }
 
-#bikePrice {
+&__price {
   position: absolute;
   left: 100px;
   bottom: 0;
 
-.fitari{
+.futari_tume{
 	margin-left: -7px;
 	margin-right: -7px;
    }
 	}
  }
 }
-	
-#eat {
+
+.eat {
   margin-top: 220px;
   position: relative;
 
-#eatTitle {
+&__title {
   margin-left: 1100px;
 }
 
-#eatImage {
+&__image {
   margin-top: 100px;
   margin-left: 180px;
 }
 
-#eatPhrase {
+&__phrase {
   position: absolute;
   text-align: right;
   top: 320px;
@@ -298,27 +250,27 @@ span::before {
   letter-spacing: 1.5px;
 }
 
-#eatPrice {
+&__price {
   line-height: 20px;
   position: absolute;
   right: 60px;
   bottom: 0;
 
-.natsu{
+.natsu_tume{
 	margin-left:-8px;
   }
  }
 }
 
-#access {
+.access {
   margin-top: 220px;
   position: relative;
 
-#accessTitle {
+&__title {
   margin-left: 60px;
 }
 
-#accessPhrase {
+&__phrase {
   position: absolute;
   top: 150px;
   left: 300px;
@@ -327,18 +279,12 @@ span::before {
   letter-spacing: 1.5px;
 }
 
-#accessContents{
-#process {
+&__img {
   text-align: center;
   margin-left: 230px;
 }
 
-h3 {
-  font-size: 1.3em;
-  margin-left: 150px;
-}
-
-#bus {
+&__link {
   margin: 30px 60px 0 0;
   text-align: right;
 
@@ -370,25 +316,24 @@ a:visited {
   color:#9FCDD8;
    }
 	}
- }
 }
 
-#view {
+.sight {
   margin-top: 220px;
 
-#viewTitle {
+&__title {
   margin-left: 1100px;
 }
 
-#swan {
+&__swan {
   margin-top: -20px;
   position: relative;
-		
-#swanImage {
+
+.swan__image {
   float: left;
 }
 
-#swanPhrase {
+.swan__phrase {
   font-size: 1.3em;
   line-height: 50px;
   letter-spacing: 1.5px;
@@ -398,16 +343,16 @@ a:visited {
 	}
 }
 
-#flower {
+.flower {
   margin-top: 200px;
   position: relative;
 
-#flowerImage {
+&__image {
   float: right;
   margin-right: 60px;
 }
 
-#flowerPhrase {
+&__phrase {
   font-size: 1.3em;
   line-height: 50px;
   letter-spacing: 1.5px;
@@ -417,15 +362,15 @@ a:visited {
  }
 }
 
-#granma {
+.granma {
   margin-top: 200px;
   position: relative;
 
-#granmaImage {
+&__image {
   float: left;
 }
 
-#granmaPhrase {
+&__phrase {
   text-align: right;
   font-size: 1.3em;
   line-height: 50px;
@@ -434,12 +379,12 @@ a:visited {
   top: 100px;
   right: 60px;
 
-#migi{
+.granma_tume{
  	margin-right:-12px;
  }
 }
 
-a #moreBtn {
+.moreBtn {
   padding: 10px 14px;
   border: 1px solid #B9B9B9;
   font-size: 0.8em;
@@ -451,7 +396,7 @@ a #moreBtn {
   display: inline-block;
   position: relative;
 
-#under {
+.under {
   display: inline-block;
   position: relative;
 }
@@ -472,26 +417,24 @@ a #moreBtn {
 	}
  }
 
-#contactTitle {
+.contact__title {
   padding-bottom: 10px;
   background: #FFFFFF;
   margin-top: 220px;
   position: relative;
   z-index: 1;
+  width: 51.5px;
 }
 }
-	
-#contact {
+
+.contact {
   min-height: 1000px;
-  background: url(../img_top/img_contact.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(../../assets/images/index/img_contact.png) no-repeat center center fixed;
   background-size: cover;
   position: relative;
   margin-top: -60px;
 
-#info dl {
+&__info dl {
   color: #6F6F6F;
   background: #FFFFFF;
   margin: 0 auto;
@@ -520,15 +463,15 @@ dd {
 	font-size: 1.1em;
 }
 
-#sns{
+&__sns{
 	width:135px;
 	position:absolute;
   bottom:20px;
 	left:50%;
-	transform:translateX(-50%);	
+	transform:translateX(-50%);
 }
 
-#blogBtn {
+.btn__blog {
   padding-right: 10px;
   float: left;
   border-right: 0.5px solid #333;
@@ -538,30 +481,22 @@ a {
   color: #6F6F6F;
  }
 }
-	
-#instaBtn a {
+
+.btn__insta a {
   margin-left: 10px;
   text-decoration: none;
   color: #6F6F6F;
  }
 }
 
-.action {
-  visibility: hidden;
-}
+
 
 .fadeInDown {
-  -webkit-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1.5s;
-  -ms-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   visibility: visible !important;
 }
-
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -579,11 +514,11 @@ a {
     -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
   }
-  100%{
+  100% {
     opacity: 1;
-   }
   }
- }
+}
+}
 }
 
 /*==================
@@ -591,74 +526,74 @@ a {
 ====================*/
 
 @media screen and (max-width:768px){
-	
+
 	body{
 
 	.title{
 		font-size:1.1em;
 		}
-	
+
 	.backWhite{
 		background: #fff;
 		padding-left: 5px;
 	}
-		
+
 	.price{
 		padding:0;
 		border:none;
 		background:none;
 	}
-		
+
 	.bgWhite{
 		padding:2px 5px;
 		background:#fff;
 	}
-	
-	#containerTop{
+
+	.header{
 		width:100%;
-		
-	#mainTitle{
+
+	.title--big{
 		font-size: 1.9em;
 		letter-spacing: 0.7em;
 		min-height: 310px;
 		}
 	}
-		
-	#wrapper{
-	#contents{
+
+	.wrapper{
+	&__inner{
 		width: 100%;
-		
-	#navi{
-		ul{ 
+
+	.navi{
+		ul{
 		li{
 			line-height: 2.2em;
 		a{
 			font-size:0.9em;
 			}
-		 }	
+		 }
 		}
 	}
-		
-	#concept{
+
+	.concept{
 		padding-top: 50px;
 		min-height: 337px;
 		position:relative;
-	
-	#conceptTitle{
+
+	&__title{
 		font-size: 1.1em;
-	
-	#conceptTitle2{
+
+	&__title--2{
 		line-height:2em;
 	 }
 	}
-	
-	#conceptPhrase{
+
+	&__phrase{
 		font-size:0.7em;
 		line-height: 3.0em;
 		margin-right: 10px;
 	}
-	
-	#conceptImage1{
+
+	&__image--1{
 		position: absolute;
 		width: 282px;
 		height: auto;
@@ -667,19 +602,19 @@ a {
 	 }
 	}
 
-	#play{
+	.play{
 		margin-top: 65px;
-	
-	#playTitle,
-	#eat #eatTitle{
+
+	&__title,
+	.eat__title{
 		font-size: 1.9em;
 		letter-spacing: 0.3em;
 	}
-	
-	#boat{
-		#boatImg{
+
+	.boat{
+		&__img{
 		position: static;
-				
+
 		img{
 	    width: 295px;
     	height: auto;
@@ -688,35 +623,35 @@ a {
     	bottom: -117px;
 			}
 		}
-	
-	#boatPhrase{
+
+	&__phrase{
 		font-size:0.7em;
 		line-height: 3.0em;
 		top:-130px;
-		right: 0;		
+		right: 0;
 	}
-	
-	#boatPrice{
+
+	&__price{
 		position: absolute;
 		bottom: -117px;
 		right:0;
 		opacity: 0.5;
 		line-height:20px;
-		
-		.hidari{
+
+		.boat_tume{
 		margin-right:23px;
-		}	
+		}
 	 }
 	}
-	
-	#boat #boatPrice p,
-	#bike #bikePrice p,
-	#eat #eatPrice p{
+
+	.boat__price p,
+	.bike__price p,
+	.eat__price p{
 		font-size: 0.5em
 	}
-	
-	#bike{ 
-	#bikeImage{
+
+	.bike{
+	&__image{
 		position: static;
 	img{
 	  width: 295px;
@@ -724,46 +659,46 @@ a {
    	position: absolute;
    	right: 10px;
    	bottom: -325px;
-		}		
+		}
 	}
-	
-	#bikePhrase{
+
+	&__phrase{
 		font-size:0.7em;
 		line-height: 3.0em;
 		top:143px;
-		left: 10px;	
+		left: 10px;
 		letter-spacing: 0.5px;
 	}
-	
-	#bikePrice{
+
+	&__price{
 		position: absolute;
 		bottom: -325px;
 		left:10px;
 		opacity: 0.5;
 		padding: 12px 8px;
 		line-height:20px;
-	
-		.fitari{
+
+		.futari_tume{
 		margin-left:-2px;
 		padding-right:0;
 		}
 	}
 	}
 	}
-		
-	#eat{
+
+	.eat{
 		margin-top:803px;
 		height:178px;
-	
-	#eatTitle{
+
+	&__title{
 		position:absolute;
 		right: 50px;
-		top:-140px;		
+		top:-140px;
 	}
-	
-	#eatImage{
+
+	&__image{
 		position: static;
-		
+
 	img{
 		width:295px;
 		height:auto;
@@ -772,53 +707,52 @@ a {
 		top:-25px;
 	}
 	}
-	
-	#eatPhrase{
+
+	&__phrase{
 		font-size:0.7em;
 		line-height: 3.0em;
 		top:15px;
 		right: 10px;
 	}
-	
-	#eatPrice{
+
+	&__price{
 		position: absolute;
 		height:35px;
 		top:142px;
 		right: 4px;
-		
-	.natsu{
+
+	.natsu_tume{
 		padding:3px 0;
 		margin-left: 0px;
 	  }
 	 }
 	}
 
-	#access{
+	.access{
 		margin-top: 65px;
 		width: 100%;
-	
-	#accessPhrase{
+
+	&__phrase{
 		position: absolute;
 		width:227px;
 		top: 127px;
     	left: 53%;
 		transform: translateX(-50%);
-		
+
 	.br::before{
 		content: "\A" ;
 		white-space: pre ;
 		}
-		
+
 	p{
 		font-size: 0.5em;
 		line-height: 2.0em;
 	 }
 	}
-	
-	#accessContents{
-	#process{
+
+	&__img{
 		margin-left: 0;
-		
+
 	img{
 		width: 100%;
 		height: auto;
@@ -827,82 +761,81 @@ a {
 		}
 	}
 
-	#bus{
-		position: absolute;	
+	&__link{
+		position: absolute;
 		right:-50px;
-		
+
 	a{
 		font-size: 0.5em
 	}
 	}
 	}
-	}
-	
-	#view{
+
+	.sight{
 		width:100%;
 		position:relative;
-	
-	#viewTitle{
+
+	&__title{
 		position: absolute;
     	right: 50px;
     	top: -76px;
 	}
-	
-	#swan #swanImage img{
+
+	.swan__image img{
 		width:295px;
 		height:auto;
 		margin: 110px 0 0 15px;
 		}
-		
-	#swan #swanPhrase,
-	#flower #flowerPhrase,
-	#granma #granmaPhrase {
+
+	.swan__phrase,
+	.flower__phrase,
+	.granma__phrase {
 		font-size:0.5em;
 		line-height:3em;
 	}
-	
-	#swan #swanPhrase{
+
+	.swan__phrase{
 	  position: absolute;
     top: 150px;
   	left: 142px;
 	}
-	
-	#flower{
+
+	.flower{
 		margin-top:100px;
-		
-	#flowerImage{
+
+	&__image{
 		margin-right:10px;
-	
+
 	img{
 		width:295px;
 		height:auto;
 		}
 	 }
-	
-	#flowerPhrase{
+
+	&__phrase{
 		z-index:5;
 		top: 47px;
     	left: 25px;
 	}
 	}
-	
-	#granma {
+
+	.granma {
 		margin-top:100px;
-	
-	#granmaImage{
+
+	&__image{
 	   margin-left:10px;
-		
+
 	img{
 		width:295px;
 		height:auto;
 		}
 	}
-	
-	#granmaPhrase {
+
+	&__phrase {
 		top: 42px;
     	right: 10px;
 	}
-	
+
 	a #moreBtn{
 	    padding: 7px 10px;
 		position: absolute;
@@ -913,58 +846,58 @@ a {
 		}
 	 }
 	}
-	
-	#contactTitle {
+
+	.contact__title {
 	 	margin: 100px 0 0 60px;
 		padding-bottom: 5px;
 	}
 	}
-	
-	#contact{
+
+	.contact{
 		width:100%;
     min-height: 400px;
-	
-	#sns{
+
+	&__sns{
 		width:78px;
 		position: absolute;
 		bottom: 20px;
 		left: 50%;
 		transform: translateX(-31%);
 	}
-	
-	#info dl {
+
+	&__info dl {
 		width:168px;
 		height: 111px;
 		padding: 10px 20px;
 	}
-	
+
 	dt {
     width: 40px;
 		font-size:0.5em;
 	}
-	
+
 	dd {
     width: 128px;
 		font-size:0.5em;
 	}
-	
-	#sns{ 
-	#blogBtn a,
-	#instaBtn a{
+
+	&__sns{
+	.btn__blog a,
+	.btn__insta a{
 		font-size:0.5em;
 	}
-	
-	#blogBtn{
+
+	.btn__blog{
 		border:none;
 		padding: 0;
-		
+
 	a{
 		padding-right: 10px;
 		border-right:1px solid #b9b9b9;
 	 }
-	 } 
+	 }
 	}
- }	
+ }
 }
 }
 }
