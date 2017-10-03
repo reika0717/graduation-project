@@ -1,3 +1,5 @@
+		import _ from 'lodash';
+
 		/*header背景の動画*/
 		 $('document').ready(function() {
   	   var options = { videoId: 'e4Is32W-ppk', start: 3 };

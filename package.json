@@ -1,18 +1,24 @@
 {
   "name": "graduation-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.5.3"
+    "hf": "^0.3.0",
+    "inview": "0.0.9",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.3",
+    "tubular": "^1.7.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/script -d dist/assets/script",
+    "build-wp": "webpack",
     "style:watch": "node-sass src/style/style.scss dist/assets/style/style.css && node-sass -w src/style/style.scss dist/assets/style/style.css"
   },
   "repository": {
@@ -25,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/reika0717/graduation-project/issues"
   },
-  "homepage": "https://github.com/reika0717/graduation-project#readme"
+  "homepage": "https://github.com/reika0717/graduation-project#readme",
+  "description": ""
 }
