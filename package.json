@@ -7,12 +7,13 @@
     "inview": "0.0.9",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "node-sass": "^4.5.3",
     "tubular": "^1.7.11"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "node-sass": "^4.5.3",
     "webpack": "^3.6.0"
   },
   "scripts": {
