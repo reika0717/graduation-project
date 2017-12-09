@@ -42,27 +42,32 @@ import $ from 'jquery'
 								navi.hide();
 						}
 				});
+
+				$('.fadeIn').on('inview', (event, isInView)=>{
+					if(isInView){
+						$(this).addClass("fadeInDown");
+					}
+				})
 	 	 });
 
-		 var menuHeight = $(".navi").height();
-		 var startPos = 0;
-		 $('.fadeIn').css('visibility','hidden');
-	   $(window).scroll(() => {
-	     var windowHeight = $(window).height(),
-	       topWindow = $(window).scrollTop();
-	     $('.fadeIn').each(() => {
-	       var targetPosition = $(this).offset().top;
-	       if (topWindow > targetPosition - windowHeight + 200) {
-	         $(this).addClass("fadeInDown");
-	       }
-	     });
-			 var currentPos = $(this).scrollTop();
-	     if (currentPos > startPos) {
-	       if ($(window).scrollTop() >= 200) {
-	         $(".navi").css("top", "-" + 170 + "px");
-	               }
-	       }else{
-	       $(".navi").css("top", 0 + "px");
-	     }
-	     startPos = currentPos;
-	   });
+		 // var startPos = 0;
+		 // $('.fadeIn').css('visibility','hidden');
+	   // $(window).scroll(() => {
+	   //   var windowHeight = $(window).height(),
+	   //     topWindow = $(window).scrollTop();
+	   //   $('.fadeIn').each(() => {
+	   //     var targetPosition = $(this).offset().top;
+	   //     if (topWindow > targetPosition - windowHeight + 200) {
+	   //       $(this).addClass("fadeInDown");
+	   //     }
+	   //   });
+			//  var currentPos = $(this).scrollTop();
+	   //   if (currentPos > startPos) {
+	   //     if ($(window).scrollTop() >= 200) {
+	   //       $(".navi").css("top", "-" + 170 + "px");
+	   //             }
+	   //     }else{
+	   //     $(".navi").css("top", 0 + "px");
+	   //   }
+	   //   startPos = currentPos;
+	   // });
