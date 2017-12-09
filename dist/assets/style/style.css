@@ -1,0 +1,809 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  font-family: "FOT-筑紫A丸ゴシック Std R"; }
+  body p {
+    color: #333333; }
+  body .title {
+    writing-mode: vertical-rl;
+    font-size: 35px;
+    font-weight: 100;
+    color: #6f6f6f; }
+  body .price {
+    padding: 12px 14px;
+    border: 1px solid #B9B9B9;
+    font-size: 0.8em;
+    color: #b9b9b9; }
+  body .header {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 2; }
+    body .header .title--big {
+      writing-mode: vertical-rl;
+      font-size: 55px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -70px;
+      letter-spacing: 30px;
+      min-height: 511px; }
+    body .header__scroll {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.6em;
+      position: absolute;
+      bottom: 10%;
+      right: 50%;
+      transform: translateX(50%);
+      padding-top: 60px; }
+      body .header__scroll span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        box-sizing: border-box; }
+      body .header__scroll span::before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #fff;
+        border-radius: 100%;
+        -webkit-animation: sdb 2s infinite;
+        animation: sdb 2s infinite;
+        box-sizing: border-box; }
+  body .wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 1;
+    position: relative; }
+    body .wrapper__inner {
+      width: 1200px;
+      margin: 0 auto; }
+      body .wrapper__inner .navi {
+        position: fixed;
+        top: 0;
+        right: 10%;
+        transition: .3s;
+        z-index: 9998; }
+        body .wrapper__inner .navi ul {
+          background-color: #FFFFFF;
+          opacity: 0.6;
+          padding: 25px 15px 40px; }
+          body .wrapper__inner .navi ul li {
+            writing-mode: vertical-rl;
+            float: right;
+            line-height: 43px;
+            color: #000000; }
+            body .wrapper__inner .navi ul li a {
+              text-decoration: none;
+              color: #6F6F6F;
+              transition: .3s; }
+      body .wrapper__inner .concept {
+        width: 100%;
+        min-height: 772px;
+        padding-top: 220px;
+        writing-mode: vertical-rl;
+        position: relative; }
+        body .wrapper__inner .concept__image--1 {
+          width: 705px;
+          height: 466px;
+          position: absolute;
+          left: 0;
+          top: 525px; }
+        body .wrapper__inner .concept__title {
+          font-size: 35px;
+          position: relative;
+          z-index: 2; }
+          body .wrapper__inner .concept__title--2 {
+            font-size: 35px;
+            line-height: 122px; }
+        body .wrapper__inner .concept__phrase {
+          position: relative;
+          line-height: 80px;
+          font-size: 1.3em;
+          z-index: 2; }
+          body .wrapper__inner .concept__phrase .mura_tume {
+            display: inline-block;
+            margin-top: -0.5em;
+            margin-bottom: 0.5em; }
+      body .wrapper__inner .play {
+        margin-top: 320px; }
+        body .wrapper__inner .play .boat {
+          margin-top: 180px;
+          position: relative; }
+          body .wrapper__inner .play .boat__img {
+            float: left;
+            margin-left: 60px; }
+          body .wrapper__inner .play .boat__phrase {
+            text-align: right;
+            position: absolute;
+            top: 60px;
+            right: 50px;
+            font-size: 1.3em;
+            line-height: 40px;
+            letter-spacing: 1.5px; }
+            body .wrapper__inner .play .boat__phrase .boat__phrase--1 {
+              background: #FFFFFF; }
+          body .wrapper__inner .play .boat__price {
+            position: absolute;
+            text-align: right;
+            right: 50px;
+            bottom: 0px; }
+            body .wrapper__inner .play .boat__price_tume {
+              margin-right: 37px; }
+        body .wrapper__inner .play .bike {
+          margin-top: 280px;
+          position: relative; }
+          body .wrapper__inner .play .bike__image {
+            float: right;
+            margin-right: 60px; }
+          body .wrapper__inner .play .bike__phrase {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            font-size: 1.3em;
+            line-height: 40px;
+            letter-spacing: 1.5px; }
+          body .wrapper__inner .play .bike__price {
+            position: absolute;
+            left: 100px;
+            bottom: 0; }
+            body .wrapper__inner .play .bike__price .futari_tume {
+              margin-left: -7px;
+              margin-right: -7px; }
+      body .wrapper__inner .eat {
+        margin-top: 220px;
+        position: relative; }
+        body .wrapper__inner .eat__title {
+          margin-left: 1100px; }
+        body .wrapper__inner .eat__image {
+          margin-top: 100px;
+          margin-left: 180px; }
+        body .wrapper__inner .eat__phrase {
+          position: absolute;
+          text-align: right;
+          top: 320px;
+          right: 60px;
+          font-size: 1.3em;
+          line-height: 40px;
+          letter-spacing: 1.5px; }
+        body .wrapper__inner .eat__price {
+          line-height: 20px;
+          position: absolute;
+          right: 60px;
+          bottom: 0; }
+          body .wrapper__inner .eat__price .natsu_tume {
+            margin-left: -8px; }
+      body .wrapper__inner .access {
+        margin-top: 220px;
+        position: relative; }
+        body .wrapper__inner .access__title {
+          margin-left: 60px; }
+        body .wrapper__inner .access__phrase {
+          position: absolute;
+          top: 150px;
+          left: 300px;
+          font-size: 1.3em;
+          line-height: 40px;
+          letter-spacing: 1.5px; }
+        body .wrapper__inner .access__img {
+          text-align: center;
+          margin-left: 230px; }
+        body .wrapper__inner .access__link {
+          margin: 30px 60px 0 0;
+          text-align: right; }
+          body .wrapper__inner .access__link a {
+            text-decoration: none;
+            color: #b9b9b9;
+            position: relative;
+            display: inline-block; }
+          body .wrapper__inner .access__link a:before {
+            position: absolute;
+            top: 1.5em;
+            left: 0;
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 1px;
+            background: #b9b9b9;
+            transition: 1s; }
+          body .wrapper__inner .access__link a:hover:before {
+            width: 100%; }
+          body .wrapper__inner .access__link a:visited {
+            text-decoration: none;
+            color: #9FCDD8; }
+      body .wrapper__inner .sight {
+        margin-top: 220px; }
+        body .wrapper__inner .sight__title {
+          margin-left: 1100px; }
+        body .wrapper__inner .sight__swan {
+          margin-top: -20px;
+          position: relative; }
+          body .wrapper__inner .sight__swan .swan__image {
+            float: left; }
+          body .wrapper__inner .sight__swan .swan__phrase {
+            font-size: 1.3em;
+            line-height: 50px;
+            letter-spacing: 1.5px;
+            position: absolute;
+            top: 60px;
+            left: 480px; }
+        body .wrapper__inner .sight .flower {
+          margin-top: 200px;
+          position: relative; }
+          body .wrapper__inner .sight .flower__image {
+            float: right;
+            margin-right: 60px; }
+          body .wrapper__inner .sight .flower__phrase {
+            font-size: 1.3em;
+            line-height: 50px;
+            letter-spacing: 1.5px;
+            position: absolute;
+            top: 70px;
+            left: 100px; }
+        body .wrapper__inner .sight .granma {
+          margin-top: 200px;
+          position: relative; }
+          body .wrapper__inner .sight .granma__image {
+            float: left; }
+          body .wrapper__inner .sight .granma__phrase {
+            text-align: right;
+            font-size: 1.3em;
+            line-height: 50px;
+            letter-spacing: 1.5px;
+            position: absolute;
+            top: 100px;
+            right: 60px; }
+            body .wrapper__inner .sight .granma__phrase .granma_tume {
+              margin-right: -12px; }
+          body .wrapper__inner .sight .granma .moreBtn {
+            padding: 10px 14px;
+            border: 1px solid #B9B9B9;
+            font-size: 0.8em;
+            color: #B9B9B9;
+            text-align: center;
+            margin-top: 370px;
+            margin-left: 464px;
+            text-decoration: none;
+            display: inline-block;
+            position: relative; }
+            body .wrapper__inner .sight .granma .moreBtn .under {
+              display: inline-block;
+              position: relative; }
+            body .wrapper__inner .sight .granma .moreBtn #under:before {
+              width: 100%;
+              position: absolute;
+              top: 1.3em;
+              left: 0;
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 1px;
+              background: #b9b9b9;
+              transition: 0.5s; }
+      body .wrapper__inner .contact__title {
+        padding-bottom: 10px;
+        background: #FFFFFF;
+        margin-top: 220px;
+        position: relative;
+        z-index: 1;
+        width: 51.5px; }
+    body .wrapper .contact {
+      min-height: 1000px;
+      background: url(../../assets/images/index/img_contact.png) no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      margin-top: -60px; }
+      body .wrapper .contact__info dl {
+        color: #6F6F6F;
+        background: #FFFFFF;
+        margin: 0 auto;
+        width: 404px;
+        height: 193px;
+        padding: 40px 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      body .wrapper .contact dt {
+        display: block;
+        width: 120px;
+        clear: left;
+        float: left;
+        font-size: 1.1em; }
+      body .wrapper .contact dd {
+        display: block;
+        width: 284px;
+        float: left;
+        margin-bottom: 10px;
+        font-size: 1.1em; }
+      body .wrapper .contact__sns {
+        width: 135px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%); }
+      body .wrapper .contact .btn__blog {
+        padding-right: 10px;
+        float: left;
+        border-right: 0.5px solid #333; }
+        body .wrapper .contact .btn__blog a {
+          text-decoration: none;
+          color: #6F6F6F; }
+      body .wrapper .contact .btn__insta a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #6F6F6F; }
+    body .wrapper .fadeInDown {
+      animation-fill-mode: both;
+      animation-duration: 1.5s;
+      animation-name: fadeInDown;
+      visibility: visible !important; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1; } }
+
+/*==================
+レスポンシブ用
+====================*/
+@media screen and (max-width: 768px) {
+  body .title {
+    font-size: 1.1em; }
+  body .backWhite {
+    background: #fff;
+    padding-left: 5px; }
+  body .price {
+    padding: 0;
+    border: none;
+    background: none; }
+  body .bg_white {
+    padding: 2px 5px;
+    background: #fff; }
+  body .header {
+    width: 100%; }
+    body .header .title--big {
+      font-size: 1.9em;
+      letter-spacing: 0.7em;
+      min-height: 310px; }
+  body .wrapper__inner {
+    width: 100%; }
+    body .wrapper__inner .navi ul li {
+      line-height: 2.2em; }
+      body .wrapper__inner .navi ul li a {
+        font-size: 0.9em; }
+    body .wrapper__inner .concept {
+      padding-top: 50px;
+      min-height: 337px;
+      position: relative; }
+      body .wrapper__inner .concept__title {
+        font-size: 1.1em; }
+      body .wrapper__inner .concept__title--2 {
+        line-height: 2em;
+        font-size: 1.0em; }
+      body .wrapper__inner .concept__phrase {
+        font-size: 0.7em;
+        line-height: 3.0em;
+        margin-right: 10px; }
+      body .wrapper__inner .concept__image--1 {
+        position: absolute;
+        width: 282px;
+        height: auto;
+        top: 203px;
+        left: 5px; }
+    body .wrapper__inner .play {
+      margin-top: 65px; }
+      body .wrapper__inner .play__title,
+      body .wrapper__inner .play .eat__title {
+        letter-spacing: 0.3em; }
+      body .wrapper__inner .play__title {
+        margin-left: 50px; }
+      body .wrapper__inner .play .boat__img {
+        position: static; }
+        body .wrapper__inner .play .boat__img img {
+          width: 295px;
+          height: auto;
+          position: absolute;
+          left: 10px;
+          bottom: -117px; }
+      body .wrapper__inner .play .boat__phrase {
+        font-size: 0.7em;
+        line-height: 3.0em;
+        top: -130px;
+        right: 0; }
+      body .wrapper__inner .play .boat__price {
+        position: absolute;
+        bottom: -117px;
+        right: 0;
+        opacity: 0.5;
+        line-height: 20px; }
+        body .wrapper__inner .play .boat__price .boat_tume {
+          margin-right: 23px; }
+      body .wrapper__inner .play .boat__price p,
+      body .wrapper__inner .play .bike__price p,
+      body .wrapper__inner .play .eat__price p {
+        font-size: 0.5em; }
+      body .wrapper__inner .play .bike__image {
+        position: static; }
+        body .wrapper__inner .play .bike__image img {
+          width: 295px;
+          height: auto;
+          position: absolute;
+          right: 10px;
+          bottom: -325px; }
+      body .wrapper__inner .play .bike__phrase {
+        font-size: 0.7em;
+        line-height: 3.0em;
+        top: 143px;
+        left: 10px;
+        letter-spacing: 0.5px; }
+      body .wrapper__inner .play .bike__price {
+        position: absolute;
+        bottom: -325px;
+        left: 10px;
+        opacity: 0.5;
+        padding: 12px 8px;
+        line-height: 20px; }
+        body .wrapper__inner .play .bike__price .futari_tume {
+          margin-left: -2px;
+          padding-right: 0; }
+    body .wrapper__inner .eat {
+      margin-top: 803px;
+      height: 178px; }
+      body .wrapper__inner .eat__title {
+        position: absolute;
+        right: 50px;
+        top: -140px; }
+      body .wrapper__inner .eat__image {
+        position: static; }
+        body .wrapper__inner .eat__image img {
+          width: 295px;
+          height: auto;
+          position: absolute;
+          left: 25px;
+          top: -25px; }
+      body .wrapper__inner .eat__phrase {
+        font-size: 0.7em;
+        line-height: 3.0em;
+        top: 15px;
+        right: 10px; }
+      body .wrapper__inner .eat__price {
+        position: absolute;
+        height: 35px;
+        top: 142px;
+        right: 4px; }
+        body .wrapper__inner .eat__price p {
+          font-size: 0.5em; }
+          body .wrapper__inner .eat__price p .natsu_tume {
+            padding: 3px 0;
+            margin-left: 0px; }
+    body .wrapper__inner .access {
+      margin-top: 65px;
+      width: 100%; }
+      body .wrapper__inner .access__phrase {
+        position: absolute;
+        width: 227px;
+        top: 127px;
+        left: 53%;
+        transform: translateX(-50%); }
+        body .wrapper__inner .access__phrase .br::before {
+          content: "\A";
+          white-space: pre; }
+        body .wrapper__inner .access__phrase p {
+          font-size: 0.5em;
+          line-height: 2.0em; }
+      body .wrapper__inner .access__img {
+        margin-left: 0; }
+        body .wrapper__inner .access__img img {
+          width: 100%;
+          height: auto;
+          margin-left: 39px;
+          margin-top: 80px; }
+      body .wrapper__inner .access__link {
+        position: absolute;
+        right: -50px; }
+        body .wrapper__inner .access__link a {
+          font-size: 0.5em; }
+    body .wrapper__inner .sight {
+      width: 100%;
+      position: relative; }
+      body .wrapper__inner .sight__title {
+        position: absolute;
+        right: 50px;
+        top: -76px; }
+      body .wrapper__inner .sight .swan__image img {
+        width: 295px;
+        height: auto;
+        margin: 110px 0 0 15px; }
+      body .wrapper__inner .sight .swan__phrase,
+      body .wrapper__inner .sight .flower__phrase,
+      body .wrapper__inner .sight .granma__phrase {
+        font-size: 0.5em;
+        line-height: 3em; }
+      body .wrapper__inner .sight .swan__phrase {
+        position: absolute;
+        top: 150px;
+        left: 142px; }
+      body .wrapper__inner .sight .flower {
+        margin-top: 100px; }
+        body .wrapper__inner .sight .flower__image {
+          margin-right: 10px; }
+          body .wrapper__inner .sight .flower__image img {
+            width: 295px;
+            height: auto; }
+        body .wrapper__inner .sight .flower__phrase {
+          z-index: 5;
+          top: 47px;
+          left: 25px; }
+      body .wrapper__inner .sight .granma {
+        margin-top: 100px; }
+        body .wrapper__inner .sight .granma__image {
+          margin-left: 10px; }
+          body .wrapper__inner .sight .granma__image img {
+            width: 295px;
+            height: auto; }
+        body .wrapper__inner .sight .granma__phrase {
+          top: 42px;
+          right: 10px; }
+        body .wrapper__inner .sight .granma .moreBtn {
+          padding: 7px 10px;
+          position: absolute;
+          background: #fff;
+          top: -192px;
+          right: 5px;
+          font-size: 0.5em; }
+    body .wrapper__inner .contact__title {
+      margin: 100px 0 0 60px;
+      padding-bottom: 5px;
+      width: 28px; }
+  body .wrapper .contact {
+    width: 100%;
+    min-height: 400px; }
+    body .wrapper .contact__sns {
+      width: 92px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%); }
+    body .wrapper .contact__info dl {
+      width: 168px;
+      height: 111px;
+      padding: 10px 20px; }
+    body .wrapper .contact dt {
+      width: 40px;
+      font-size: 0.5em; }
+    body .wrapper .contact dd {
+      width: 128px;
+      font-size: 0.5em;
+      margin-bottom: 0.2em; }
+    body .wrapper .contact__sns .btn__blog a,
+    body .wrapper .contact__sns .btn__insta a {
+      font-size: 0.5em; }
+    body .wrapper .contact__sns .btn__blog {
+      border: none;
+      padding: 0; }
+      body .wrapper .contact__sns .btn__blog a {
+        padding-right: 10px;
+        border-right: 1px solid #b9b9b9; } }
+
+/*==================
+初期化の設定
+====================*/
+/*ベースの要素の設定をリセット*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+p, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/*HTML5の新要素をdisplay:blockにする*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*画像の枠線をクリアして位置の初期値の設定*/
+img {
+  border: 0;
+  vertical-align: top; }
+
+/*リンク時の枠の点線をなしにする*/
+a {
+  outline: none; }
+
+/*リスト要素の初期値をリセット*/
+ul, ol {
+  list-style: none; }
+
+/*右マージンの設定*/
+.mRight20 {
+  margin-right: 20px; }
+
+/*clearfixの設定*/
+.clearfix:after {
+  visibility: hidden;
+  /*見えなくする*/
+  height: 0;
+  /*見えなくする*/
+  display: block;
+  /*block要素にする*/
+  font-size: 0;
+  content: " ";
+  clear: both; }
+
+* html .clearfix {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/* IE7 */
+/* CSS Document */
+/*==================
+初期化の設定
+====================*/
+/*ベースの要素の設定をリセット*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+p, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/*HTML5の新要素をdisplay:blockにする*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*画像の枠線をクリアして位置の初期値の設定*/
+img {
+  border: 0;
+  vertical-align: top; }
+
+/*リンク時の枠の点線をなしにする*/
+a {
+  outline: none; }
+
+/*リスト要素の初期値をリセット*/
+ul, ol {
+  list-style: none; }
+
+/*右マージンの設定*/
+.mRight20 {
+  margin-right: 20px; }
+
+/*clearfixの設定*/
+.clearfix:after {
+  visibility: hidden;
+  /*見えなくする*/
+  height: 0;
+  /*見えなくする*/
+  display: block;
+  /*block要素にする*/
+  font-size: 0;
+  content: " ";
+  clear: both; }
+
+* html .clearfix {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/* IE7 */
+/* CSS Document */
+.sight__wrapper {
+  width: 1128px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.sight__title--2 {
+  background: #FFFFFF;
+  margin-top: 58px;
+  padding: 20px 15px;
+  position: absolute;
+  top: -30px;
+  left: 46px;
+  z-index: 2;
+  border: 1px solid #DADADA; }
+
+.ill_bike {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  right: -85px;
+  top: 276px;
+  animation-duration: 3s;
+  animation-name: slide-hidari; }
+
+@keyframes slide-hidari {
+  from {
+    right: 0px; }
+  to {
+    right: -85px; } }
+
+ul, ol {
+  list-style: none; }
+
+.imgWrap {
+  width: 1128px;
+  position: absolute;
+  top: 452px;
+  left: 0; }
+
+.imgWrap ul {
+  margin: 0 auto;
+  width: 1128px; }
+
+.imgWrap li {
+  margin: 4px;
+  width: 180px;
+  height: 180px;
+  float: left; }
+
+.imgWrap li img {
+  display: none; }
+
+.ill_swan {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 40% 50%; }
+
+.illust {
+  position: relative; }
+
+.ill_flower {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 15px;
+  right: 17px; }
+
+.clearfix:after {
+  visibility: hidden;
+  /*見えなくする*/
+  height: 0;
+  /*見えなくする*/
+  display: block;
+  /*block要素にする*/
+  font-size: 0;
+  content: " ";
+  clear: both; }

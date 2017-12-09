@@ -544,7 +544,7 @@ a {
 		background:none;
 	}
 
-	.bgWhite{
+	.bg_white{
 		padding:2px 5px;
 		background:#fff;
 	}
@@ -581,11 +581,12 @@ a {
 
 	&__title{
 		font-size: 1.1em;
-
+  }
 	&__title--2{
 		line-height:2em;
+    font-size: 1.0em;
 	 }
-	}
+
 
 	&__phrase{
 		font-size:0.7em;
@@ -607,9 +608,12 @@ a {
 
 	&__title,
 	.eat__title{
-		font-size: 1.9em;
 		letter-spacing: 0.3em;
 	}
+
+  &__title{
+    margin-left: 50px;
+  }
 
 	.boat{
 		&__img{
@@ -721,10 +725,14 @@ a {
 		top:142px;
 		right: 4px;
 
+  p{
+    font-size: 0.5em;
+
 	.natsu_tume{
 		padding:3px 0;
 		margin-left: 0px;
 	  }
+  }
 	 }
 	}
 
@@ -836,8 +844,8 @@ a {
     	right: 10px;
 	}
 
-	a #moreBtn{
-	    padding: 7px 10px;
+	.moreBtn{
+	  padding: 7px 10px;
 		position: absolute;
 		background: #fff;
 		top: -192px;
@@ -850,6 +858,7 @@ a {
 	.contact__title {
 	 	margin: 100px 0 0 60px;
 		padding-bottom: 5px;
+    width: 28px;
 	}
 	}
 
@@ -858,11 +867,11 @@ a {
     min-height: 400px;
 
 	&__sns{
-		width:78px;
+		width:92px;
 		position: absolute;
 		bottom: 20px;
 		left: 50%;
-		transform: translateX(-31%);
+		transform: translateX(-50%);
 	}
 
 	&__info dl {
@@ -879,6 +888,7 @@ a {
 	dd {
     width: 128px;
 		font-size:0.5em;
+    margin-bottom: 0.2em;
 	}
 
 	&__sns{
