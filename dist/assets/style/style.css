@@ -63,6 +63,15 @@ body {
         -webkit-animation: sdb 2s infinite;
         animation: sdb 2s infinite;
         box-sizing: border-box; }
+      body .header__video{
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100vh;
+          width: auto;
+          height: auto;
+          z-index: -100;
+      }
   body .wrapper {
     width: 100%;
     overflow: hidden;
